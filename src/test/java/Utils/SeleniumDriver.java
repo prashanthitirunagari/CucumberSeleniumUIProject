@@ -30,7 +30,8 @@ public class SeleniumDriver {
 
     public final static int TIMEOUT = 5;
     public final static int PAGE_LOAD_TIMEOUT = 5;
-    public static String browser="chrome", url; 
+    //public static String browser="chrome", url; 
+    public static String browser=System.getenv("Browser"), url;
     public static String gbReturnValue="";
 
     public static void loadConfigProperties() throws IOException{
