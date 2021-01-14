@@ -3,7 +3,6 @@ Feature: Test to validate links in the left frame
   the maths surrey page is working
   Doing the Acceptance Testing
 
-  @Sanity
   @Regression
   Scenario Outline: Validate maths surrey Page
     Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website
