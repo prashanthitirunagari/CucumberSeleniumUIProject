@@ -44,7 +44,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>Way2Automation Cucumber Reports</projectName> <!-- Replace with project name -->
+							<projectName>CucumberSeleniumUIProject</projectName> <!-- Replace with project name -->
 							<outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
 							<cucumberOutput>target/cucumber-reports/cucumber.json</cucumberOutput>
 							<buildNumber>1</buildNumber>

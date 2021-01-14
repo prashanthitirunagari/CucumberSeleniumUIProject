@@ -1,108 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="17" time="134.689192">
-    <testcase classname="Test to validate Drag &amp; Drop with frames in Droppable Feature" name="Drag &amp; Drop in a Frame" time="11.938716">
-        <system-out><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-When User should clicks on Droppable link...................................passed
-And User switches to respective frame.......................................passed
-And tries to move the drag me object to drop me object......................passed
-Then User should be should be successfully drag & drop the object...........passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="36.26689">
+    <testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page" time="9.743313">
+        <system-out><![CDATA[Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website.passed
+When I click on the link "Contents".........................................passed
+Then I should see list of "Contents" in the right frames....................passed
+And the page title should be HTML Learning Package..........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Verification of the page title" time="7.100051">
-        <system-out><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-Then the page title should be "jQuery UI"...................................passed
+    <testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page 2" time="6.982838">
+        <system-out><![CDATA[Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website.passed
+When I click on the link "Background".......................................passed
+Then I should see list of "HTML Background" in the right frames.............passed
+And the page title should be HTML Learning Package..........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating existence of menus in Jqueryui home Page" time="7.264981">
-        <system-out><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-Then User should see list of "Demos"........................................passed
+    <testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page 3" time="6.576509">
+        <system-out><![CDATA[Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website.passed
+When I click on the link "Beg's Guide"......................................passed
+Then I should see list of "Beginner's Guide" in the right frames............passed
+And the page title should be HTML Learning Package..........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating existence of menus in Jqueryui home Page 2" time="6.850754">
-        <system-out><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-Then User should see list of "Download".....................................passed
+    <testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page 4" time="6.701937">
+        <system-out><![CDATA[Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website.passed
+When I click on the link "HTML Tags"........................................passed
+Then I should see list of "HTML Tags" in the right frames...................passed
+And the page title should be HTML Learning Package..........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating existence of menus in Jqueryui home Page 3" time="7.178729">
-        <system-out><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-Then User should see list of "API Documentation"............................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating existence of menus in Jqueryui home Page 4" time="6.972269">
-        <system-out><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-Then User should see list of "Themes".......................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating existence of menus in Jqueryui home Page 5" time="6.876772">
-        <system-out><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-Then User should see list of "Development"..................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating existence of menus in Jqueryui home Page 6" time="8.143348">
-        <system-out><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-Then User should see list of "Support"......................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating existence of menus in Jqueryui home Page 7" time="7.541065">
-        <system-out><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-Then User should see list of "Blog".........................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating existence of menus in Jqueryui home Page 8" time="6.488912">
-        <system-out><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-Then User should see list of "About"........................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating clicking on a menu navigate to respective menu details screen" time="7.254542">
-        <system-out><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-When User should clicks on "Demos"..........................................passed
-Then menu screen "jQuery UI Demos" should display...........................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating clicking on a menu navigate to respective menu details screen 2" time="7.365235">
-        <system-out><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-When User should clicks on "Download".......................................passed
-Then menu screen "Download Builder" should display..........................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating clicking on a menu navigate to respective menu details screen 3" time="7.63964">
-        <system-out><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-When User should clicks on "API Documentation"..............................passed
-Then menu screen "jQuery UI 1.12 API Documentation" should display..........passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating clicking on a menu navigate to respective menu details screen 4" time="8.206968">
-        <system-out><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-When User should clicks on "Themes".........................................passed
-Then menu screen "ThemeRoller" should display...............................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating clicking on a menu navigate to respective menu details screen 5" time="7.159535">
-        <system-out><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-When User should clicks on "Development"....................................passed
-Then menu screen "Development Center" should display........................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating clicking on a menu navigate to respective menu details screen 6" time="13.462348">
-        <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:87)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:65)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:75)&#13;&#10;&#9;at Utils.SeleniumHelper.ObjectText(SeleniumHelper.java:146)&#13;&#10;&#9;at StepDefinitions.JQueryStepDef.menu_screen_should_display(JQueryStepDef.java:61)&#13;&#10;&#9;at ✽.menu screen &quot;Support Center&quot; should display(file:src/test/java/FeatureFiles/JQueyHomePage.feature:32)&#13;&#10;"><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-When User should clicks on "Support"........................................passed
-Then menu screen "Support Center" should display............................failed
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertFalse(Assert.java:65)
-	at org.junit.Assert.assertFalse(Assert.java:75)
-	at Utils.SeleniumHelper.ObjectText(SeleniumHelper.java:146)
-	at StepDefinitions.JQueryStepDef.menu_screen_should_display(JQueryStepDef.java:61)
-	at ✽.menu screen "Support Center" should display(file:src/test/java/FeatureFiles/JQueyHomePage.feature:32)
-]]></failure>
-    </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating clicking on a menu navigate to respective menu details screen 7" time="7.245327">
-        <system-out><![CDATA[Given User access jqueryui "http://jqueryui.com" site.......................passed
-When User should clicks on "About"..........................................passed
-Then menu screen "About jQuery UI" should display...........................passed
+    <testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page 5" time="6.262293">
+        <system-out><![CDATA[Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website.passed
+When I click on the link "Tables"...........................................passed
+Then I should see list of "Tables" in the right frames......................passed
+And the page title should be HTML Learning Package..........................passed
 ]]></system-out>
     </testcase>
 </testsuite>

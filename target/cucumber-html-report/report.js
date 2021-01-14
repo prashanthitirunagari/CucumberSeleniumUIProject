@@ -1,152 +1,34 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/FeatureFiles/JQueryDroppablePage.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/FeatureFiles/LeftFrameNavigateLinksMathsWebPage.feature");
 formatter.feature({
-  "name": "Test to validate Drag \u0026 Drop with frames in Droppable Feature",
-  "description": "",
+  "name": "Test to validate links in the left frame",
+  "description": "  In order to validate that \n  the maths surrey page is working\n  Doing the Acceptance Testing",
   "keyword": "Feature"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Drag \u0026 Drop in a Frame",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.step({
-  "name": "User should clicks on Droppable link",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "JQueryDroppableSD.user_should_clicks_on_Droppable_link()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User switches to respective frame",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "JQueryDroppableSD.user_switches_to_respective_frame()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "tries to move the drag me object to drop me object",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "JQueryDroppableSD.tries_to_move_the_drag_me_object_to_drop_me_object()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should be should be successfully drag \u0026 drop the object",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "JQueryDroppableSD.user_should_be_should_be_successfully_drag_drop_the_object()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.uri("file:src/test/java/FeatureFiles/JQueyHomePage.feature");
-formatter.feature({
-  "name": "Test to validate Menus in the JqueryUi home page",
-  "description": "  In order to validate that \n  the jqueryui page is working\n  Doing the Acceptance Testing",
-  "keyword": "Feature"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Verification of the page title",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.step({
-  "name": "the page title should be \"jQuery UI\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "JQueryStepDef.the_page_title_should_be(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
 });
 formatter.scenarioOutline({
-  "name": "Validating existence of menus in Jqueryui home Page",
+  "name": "Validate maths surrey Page",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Sanity"
+      "name": "@Regression"
     }
   ]
 });
 formatter.step({
-  "name": "User should see list of \"\u003cmenus\u003e\"",
+  "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "I click on the link \"\u003clinkname\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "I should see list of \"\u003cheader\u003e\" in the right frames",
   "keyword": "Then "
+});
+formatter.step({
+  "name": "the page title should be HTML Learning Package",
+  "keyword": "And "
 });
 formatter.examples({
   "name": "",
@@ -155,55 +37,51 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "menus"
+        "linkname",
+        "header"
       ]
     },
     {
       "cells": [
-        "Demos"
+        "Contents",
+        "Contents"
       ]
     },
     {
       "cells": [
-        "Download"
+        "Background",
+        "HTML Background"
       ]
     },
     {
       "cells": [
-        "API Documentation"
+        "Beg\u0027s Guide",
+        "Beginner\u0027s Guide"
       ]
     },
     {
       "cells": [
-        "Themes"
+        "HTML Tags",
+        "HTML Tags"
       ]
     },
     {
       "cells": [
-        "Development"
-      ]
-    },
-    {
-      "cells": [
-        "Support"
-      ]
-    },
-    {
-      "cells": [
-        "Blog"
-      ]
-    },
-    {
-      "cells": [
-        "About"
+        "Tables",
+        "Tables"
       ]
     }
   ]
 });
-formatter.background({
-  "name": "",
+formatter.scenario({
+  "name": "Validate maths surrey Page",
   "description": "",
-  "keyword": "Background"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Regression"
+    }
+  ]
 });
 formatter.before({
   "status": "passed"
@@ -212,562 +90,61 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
+  "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
+  "location": "LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Validating existence of menus in Jqueryui home Page",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
 formatter.step({
-  "name": "User should see list of \"Demos\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_should_see_list_of_menus(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validating existence of menus in Jqueryui home Page",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.step({
-  "name": "User should see list of \"Download\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_should_see_list_of_menus(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validating existence of menus in Jqueryui home Page",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.step({
-  "name": "User should see list of \"API Documentation\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_should_see_list_of_menus(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validating existence of menus in Jqueryui home Page",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.step({
-  "name": "User should see list of \"Themes\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_should_see_list_of_menus(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validating existence of menus in Jqueryui home Page",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.step({
-  "name": "User should see list of \"Development\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_should_see_list_of_menus(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validating existence of menus in Jqueryui home Page",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.step({
-  "name": "User should see list of \"Support\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_should_see_list_of_menus(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validating existence of menus in Jqueryui home Page",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.step({
-  "name": "User should see list of \"Blog\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_should_see_list_of_menus(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validating existence of menus in Jqueryui home Page",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.step({
-  "name": "User should see list of \"About\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_should_see_list_of_menus(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "name": "Validating clicking on a menu navigate to respective menu details screen",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.step({
-  "name": "User should clicks on \"\u003cmenus\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "menu screen \"\u003cheaderName\u003e\" should display",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "menus",
-        "headerName"
-      ]
-    },
-    {
-      "cells": [
-        "Demos",
-        "jQuery UI Demos"
-      ]
-    },
-    {
-      "cells": [
-        "Download",
-        "Download Builder"
-      ]
-    },
-    {
-      "cells": [
-        "API Documentation",
-        "jQuery UI 1.12 API Documentation"
-      ]
-    },
-    {
-      "cells": [
-        "Themes",
-        "ThemeRoller"
-      ]
-    },
-    {
-      "cells": [
-        "Development",
-        "Development Center"
-      ]
-    },
-    {
-      "cells": [
-        "Support",
-        "Support Center"
-      ]
-    },
-    {
-      "cells": [
-        "About",
-        "About jQuery UI"
-      ]
-    }
-  ]
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validating clicking on a menu navigate to respective menu details screen",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.step({
-  "name": "User should clicks on \"Demos\"",
+  "name": "I click on the link \"Contents\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "JQueryStepDef.user_should_clicks_on(String)"
+  "location": "LeftLinksFrameSteps.i_click_on_the_link(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "menu screen \"jQuery UI Demos\" should display",
+  "name": "I should see list of \"Contents\" in the right frames",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "JQueryStepDef.menu_screen_should_display(String)"
+  "location": "LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
-  "keyword": "Given "
+  "name": "the page title should be HTML Learning Package",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
+  "location": "LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"
 });
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
-  "name": "Validating clicking on a menu navigate to respective menu details screen",
+  "name": "Validate maths surrey Page",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Sanity"
+      "name": "@Regression"
     }
   ]
 });
-formatter.step({
-  "name": "User should clicks on \"Download\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_should_clicks_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "menu screen \"Download Builder\" should display",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "JQueryStepDef.menu_screen_should_display(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
 formatter.before({
   "status": "passed"
 });
@@ -775,56 +152,61 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
+  "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
+  "location": "LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"
 });
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "I click on the link \"Background\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LeftLinksFrameSteps.i_click_on_the_link(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should see list of \"HTML Background\" in the right frames",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the page title should be HTML Learning Package",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
-  "name": "Validating clicking on a menu navigate to respective menu details screen",
+  "name": "Validate maths surrey Page",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Sanity"
+      "name": "@Regression"
     }
   ]
 });
-formatter.step({
-  "name": "User should clicks on \"API Documentation\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_should_clicks_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "menu screen \"jQuery UI 1.12 API Documentation\" should display",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "JQueryStepDef.menu_screen_should_display(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
 formatter.before({
   "status": "passed"
 });
@@ -832,56 +214,61 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
+  "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
+  "location": "LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"
 });
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "I click on the link \"Beg\u0027s Guide\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LeftLinksFrameSteps.i_click_on_the_link(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should see list of \"Beginner\u0027s Guide\" in the right frames",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the page title should be HTML Learning Package",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
-  "name": "Validating clicking on a menu navigate to respective menu details screen",
+  "name": "Validate maths surrey Page",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Sanity"
+      "name": "@Regression"
     }
   ]
 });
-formatter.step({
-  "name": "User should clicks on \"Themes\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_should_clicks_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "menu screen \"ThemeRoller\" should display",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "JQueryStepDef.menu_screen_should_display(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
 formatter.before({
   "status": "passed"
 });
@@ -889,56 +276,61 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
+  "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
+  "location": "LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"
 });
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "I click on the link \"HTML Tags\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LeftLinksFrameSteps.i_click_on_the_link(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should see list of \"HTML Tags\" in the right frames",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the page title should be HTML Learning Package",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
-  "name": "Validating clicking on a menu navigate to respective menu details screen",
+  "name": "Validate maths surrey Page",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Sanity"
+      "name": "@Regression"
     }
   ]
 });
-formatter.step({
-  "name": "User should clicks on \"Development\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_should_clicks_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "menu screen \"Development Center\" should display",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "JQueryStepDef.menu_screen_should_display(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
 formatter.before({
   "status": "passed"
 });
@@ -946,100 +338,41 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
+  "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
+  "location": "LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Validating clicking on a menu navigate to respective menu details screen",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
 formatter.step({
-  "name": "User should clicks on \"Support\"",
+  "name": "I click on the link \"Tables\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "JQueryStepDef.user_should_clicks_on(String)"
+  "location": "LeftLinksFrameSteps.i_click_on_the_link(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "menu screen \"Support Center\" should display",
+  "name": "I should see list of \"Tables\" in the right frames",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "JQueryStepDef.menu_screen_should_display(String)"
-});
-formatter.result({
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertFalse(Assert.java:65)\r\n\tat org.junit.Assert.assertFalse(Assert.java:75)\r\n\tat Utils.SeleniumHelper.ObjectText(SeleniumHelper.java:146)\r\n\tat StepDefinitions.JQueryStepDef.menu_screen_should_display(JQueryStepDef.java:61)\r\n\tat ✽.menu screen \"Support Center\" should display(file:src/test/java/FeatureFiles/JQueyHomePage.feature:32)\r\n",
-  "status": "failed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded0.png", null);
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User access jqueryui \"http://jqueryui.com\" site",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_access_jqueryui_site(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validating clicking on a menu navigate to respective menu details screen",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.step({
-  "name": "User should clicks on \"About\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "JQueryStepDef.user_should_clicks_on(String)"
+  "location": "LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "menu screen \"About jQuery UI\" should display",
-  "keyword": "Then "
+  "name": "the page title should be HTML Learning Package",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "JQueryStepDef.menu_screen_should_display(String)"
+  "location": "LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"
 });
 formatter.result({
   "status": "passed"
