@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: Runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 136.222 sec <<< FAILURE! - in Runner.TestRunner
+Validating clicking on a menu navigate to respective menu details screen(Test to validate Menus in the JqueryUi home page)  Time elapsed: 13.473 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at Utils.SeleniumHelper.ObjectText(SeleniumHelper.java:146)
+	at StepDefinitions.JQueryStepDef.menu_screen_should_display(JQueryStepDef.java:61)
+	at ?.menu screen "Support Center" should display(file:src/test/java/FeatureFiles/JQueyHomePage.feature:32)
+
