@@ -15,7 +15,7 @@ pipeline{
    stage('test'){
      steps {
        echo 'test the application'
-       bat "mvn install -Dcucumber.options=--tags @SpiceJetSanity"
+       bat "mvn install -Dcucumber.options="--tags @SpiceJetSanity""
        }
       }
     }
