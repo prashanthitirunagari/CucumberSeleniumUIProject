@@ -15,7 +15,7 @@ pipeline{
    stage('test'){
      steps {
        echo 'test the application'
-       bat "mvn install -Dcucumber.options="--tags @"$TestingType"""
+       bat "mvn install -Dcucumber.options=--tags @"$TestingType""
        }
       }
     }
