@@ -15,7 +15,7 @@ pipeline{
    stage('test'){
      steps {
        echo 'test the application'
-       bat "mvn install"
+       bat "mvn install -Dcucumber.options="--tags \@JQuerySanity""
        }
       }
     }
