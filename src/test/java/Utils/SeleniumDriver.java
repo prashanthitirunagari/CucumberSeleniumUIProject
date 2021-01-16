@@ -2,6 +2,7 @@ package Utils;
 
 
 
+
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -47,6 +48,7 @@ public class SeleniumDriver {
     		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\geckodriver.exe");
     		FirefoxOptions ops =new FirefoxOptions();
     		ops.setPageLoadStrategy(PageLoadStrategy.NONE);
+    		ops.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
     		ops.setBinary("");
     		/*ProfilesIni allprof = new ProfilesIni();
     		FirefoxProfile prof = allprof.getProfile("default");
@@ -54,13 +56,8 @@ public class SeleniumDriver {
     		ops.setProfile(prof);*/
 	        driver = new FirefoxDriver(ops);
 	        driver.manage().window().maximize();
-
-	        waitDriver = new WebDriverWait(driver, TIMEOUT);
 	        driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
-	        driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-	        String window=driver.getWindowHandle();
-	        
-    	}else if(browser.toLowerCase().equals("chrome")){
+	     }else if(browser.toLowerCase().equals("chrome")){
     		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\chromedriver.exe");
     		ChromeOptions ops = new ChromeOptions();
     		ops.addArguments("--disable-notifications");
