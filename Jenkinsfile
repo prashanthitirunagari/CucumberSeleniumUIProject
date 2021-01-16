@@ -9,7 +9,7 @@ pipeline{
     stage('clean'){
       steps {
         echo 'Clean the application'
-	mvn clean
+	bat mvn clean
         }
       }
    stage('test'){
