@@ -49,7 +49,6 @@ public class SeleniumDriver {
     		FirefoxOptions ops =new FirefoxOptions();
     		ops.setPageLoadStrategy(PageLoadStrategy.NONE);
     		ops.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
-    		ops.setBinary("");
     		/*ProfilesIni allprof = new ProfilesIni();
     		FirefoxProfile prof = allprof.getProfile("default");
     		prof.setPreference("dom.webnotifications.enabled", false);
