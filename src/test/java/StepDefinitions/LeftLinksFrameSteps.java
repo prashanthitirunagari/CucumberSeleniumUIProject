@@ -14,10 +14,13 @@ import Utils.SeleniumHelper.Locator;
 
 public class LeftLinksFrameSteps extends SeleniumDriver{
 
-	@Given("^I am on the nigels Page \"([^\"]*)\" of maths Website$")
-	public void i_am_on_the_nigels_Page_of_maths_Website(String webSiteURL){
-		openPage(webSiteURL);
-	    
+	@Given("^I am on the nigels landing Page of maths Website$")
+	public void i_am_on_the_nigels_Page_of_maths_Website(){
+		if(SeleniumHelper.GetPageTitle().contains("HTML Learning Package")){
+			Assert.assertTrue("actual and expected are same", true);
+		}else{
+			Assert.assertFalse(true);
+		}
 	}
 
 	@When("^I click on the link \"([^\"]*)\"$")

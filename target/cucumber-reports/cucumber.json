@@ -3,386 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-01-14T22:28:25.283Z",
+        "start_timestamp": "2021-01-16T08:41:20.714Z",
         "before": [
           {
             "result": {
-              "duration": 4131300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginStep.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 8577667500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GeneralHooks.setup(Scenario)"
-            }
-          }
-        ],
-        "line": 15,
-        "name": "Validate maths surrey Page",
-        "description": "",
-        "id": "test-to-validate-links-in-the-left-frame;validate-maths-surrey-page;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 505100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginStep.teardown()"
-            }
-          },
-          {
-            "result": {
-              "duration": 137159600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GeneralHooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 462002500,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
-            "match": {
-              "arguments": [
-                {
-                  "val": "http://www.maths.surrey.ac.uk/explore/nigelspages/",
-                  "offset": 25
-                }
-              ],
-              "location": "LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 300911800,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I click on the link \"Contents\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Contents",
-                  "offset": 21
-                }
-              ],
-              "location": "LeftLinksFrameSteps.i_click_on_the_link(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 140256000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I should see list of \"Contents\" in the right frames",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Contents",
-                  "offset": 22
-                }
-              ],
-              "location": "LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 9380500,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "the page title should be HTML Learning Package",
-            "match": {
-              "location": "LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-01-14T22:28:35.035Z",
-        "before": [
-          {
-            "result": {
-              "duration": 453300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginStep.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5613625400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GeneralHooks.setup(Scenario)"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Validate maths surrey Page",
-        "description": "",
-        "id": "test-to-validate-links-in-the-left-frame;validate-maths-surrey-page;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 388800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginStep.teardown()"
-            }
-          },
-          {
-            "result": {
-              "duration": 141251300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GeneralHooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 752081100,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
-            "match": {
-              "arguments": [
-                {
-                  "val": "http://www.maths.surrey.ac.uk/explore/nigelspages/",
-                  "offset": 25
-                }
-              ],
-              "location": "LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 304459400,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I click on the link \"Background\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Background",
-                  "offset": 21
-                }
-              ],
-              "location": "LeftLinksFrameSteps.i_click_on_the_link(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 151419300,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I should see list of \"HTML Background\" in the right frames",
-            "match": {
-              "arguments": [
-                {
-                  "val": "HTML Background",
-                  "offset": 22
-                }
-              ],
-              "location": "LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 9508700,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "the page title should be HTML Learning Package",
-            "match": {
-              "location": "LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-01-14T22:28:42.019Z",
-        "before": [
-          {
-            "result": {
-              "duration": 286600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginStep.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5617548400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GeneralHooks.setup(Scenario)"
-            }
-          }
-        ],
-        "line": 17,
-        "name": "Validate maths surrey Page",
-        "description": "",
-        "id": "test-to-validate-links-in-the-left-frame;validate-maths-surrey-page;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 222700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginStep.teardown()"
-            }
-          },
-          {
-            "result": {
-              "duration": 145674000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GeneralHooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 380619800,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
-            "match": {
-              "arguments": [
-                {
-                  "val": "http://www.maths.surrey.ac.uk/explore/nigelspages/",
-                  "offset": 25
-                }
-              ],
-              "location": "LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 224607600,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I click on the link \"Beg\u0027s Guide\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Beg\u0027s Guide",
-                  "offset": 21
-                }
-              ],
-              "location": "LeftLinksFrameSteps.i_click_on_the_link(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 183286700,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I should see list of \"Beginner\u0027s Guide\" in the right frames",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Beginner\u0027s Guide",
-                  "offset": 22
-                }
-              ],
-              "location": "LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 8678300,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "the page title should be HTML Learning Package",
-            "match": {
-              "location": "LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-01-14T22:28:48.597Z",
-        "before": [
-          {
-            "result": {
-              "duration": 354600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginStep.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5453550200,
+              "duration": 14263909300,
               "status": "passed"
             },
             "match": {
@@ -391,22 +16,13 @@
           }
         ],
         "line": 18,
-        "name": "Validate maths surrey Page",
+        "name": "One Way Flight Search with Depart Date as current Date",
         "description": "",
-        "id": "test-to-validate-links-in-the-left-frame;validate-maths-surrey-page;;5",
+        "id": "one-way-flight-search;one-way-flight-search-with-depart-date-as-current-date;;2",
         "after": [
           {
             "result": {
-              "duration": 201700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginStep.teardown()"
-            }
-          },
-          {
-            "result": {
-              "duration": 127548200,
+              "duration": 148747000,
               "status": "passed"
             },
             "match": {
@@ -419,92 +35,141 @@
         "steps": [
           {
             "result": {
-              "duration": 425946100,
+              "duration": 203652500,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
+            "line": 7,
+            "name": "User on Spicejet landing page",
             "match": {
-              "arguments": [
-                {
-                  "val": "http://www.maths.surrey.ac.uk/explore/nigelspages/",
-                  "offset": 25
-                }
-              ],
-              "location": "LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"
+              "location": "SpiceJetHomePageSD.user_on_spicejet_landing_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 303362400,
+              "duration": 144538000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "I click on the link \"HTML Tags\"",
+            "line": 8,
+            "name": "User selects \"oneway\" radio button option",
             "match": {
               "arguments": [
                 {
-                  "val": "HTML Tags",
-                  "offset": 21
+                  "val": "oneway",
+                  "offset": 14
                 }
               ],
-              "location": "LeftLinksFrameSteps.i_click_on_the_link(String)"
+              "location": "SpiceJetHomePageSD.user_selects_something_radio_button_option(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 375566900,
+              "duration": 931823400,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I should see list of \"HTML Tags\" in the right frames",
+            "line": 9,
+            "name": "User selects From city as \"DEL\" and To city as \"HYD\"",
             "match": {
               "arguments": [
                 {
-                  "val": "HTML Tags",
-                  "offset": 22
+                  "val": "DEL",
+                  "offset": 27
+                },
+                {
+                  "val": "HYD",
+                  "offset": 48
                 }
               ],
-              "location": "LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"
+              "location": "SpiceJetHomePageSD.user_selects_from_city_as_something_and_to_city_as_something(String,String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 7355900,
+              "duration": 219555400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User selects Depart date as current date",
+            "match": {
+              "location": "SpiceJetHomePageSD.user_selects_depart_date_as_current_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 474839500,
               "status": "passed"
             },
             "line": 11,
-            "name": "the page title should be HTML Learning Package",
+            "name": "user select number of Passengers \"1\"",
             "match": {
-              "location": "LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 34
+                }
+              ],
+              "location": "SpiceJetHomePageSD.user_select_number_of_passengers_something(String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 177972600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user selects currency \"GBP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GBP",
+                  "offset": 23
+                }
+              ],
+              "location": "SpiceJetHomePageSD.user_selects_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4949183500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User clicks on Search button",
+            "match": {
+              "location": "SpiceJetHomePageSD.user_clicks_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 196871100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the page which asks for GST details should display",
+            "match": {
+              "location": "SpiceJetHomePageSD.the_page_which_asks_for_gst_details_should_display()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Regression"
+            "name": "@SpiceJetSanity"
           }
         ]
       },
       {
-        "start_timestamp": "2021-01-14T22:28:55.301Z",
+        "start_timestamp": "2021-01-16T08:41:42.547Z",
         "before": [
           {
             "result": {
-              "duration": 375100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginStep.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5410262400,
+              "duration": 8926519100,
               "status": "passed"
             },
             "match": {
@@ -513,22 +178,13 @@
           }
         ],
         "line": 19,
-        "name": "Validate maths surrey Page",
+        "name": "One Way Flight Search with Depart Date as current Date",
         "description": "",
-        "id": "test-to-validate-links-in-the-left-frame;validate-maths-surrey-page;;6",
+        "id": "one-way-flight-search;one-way-flight-search-with-depart-date-as-current-date;;3",
         "after": [
           {
             "result": {
-              "duration": 245300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginStep.teardown()"
-            }
-          },
-          {
-            "result": {
-              "duration": 112360700,
+              "duration": 137939600,
               "status": "passed"
             },
             "match": {
@@ -541,83 +197,141 @@
         "steps": [
           {
             "result": {
-              "duration": 360482500,
+              "duration": 22705000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
+            "line": 7,
+            "name": "User on Spicejet landing page",
             "match": {
-              "arguments": [
-                {
-                  "val": "http://www.maths.surrey.ac.uk/explore/nigelspages/",
-                  "offset": 25
-                }
-              ],
-              "location": "LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"
+              "location": "SpiceJetHomePageSD.user_on_spicejet_landing_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 220660300,
+              "duration": 171905900,
               "status": "passed"
             },
-            "line": 9,
-            "name": "I click on the link \"Tables\"",
+            "line": 8,
+            "name": "User selects \"twoway\" radio button option",
             "match": {
               "arguments": [
                 {
-                  "val": "Tables",
-                  "offset": 21
+                  "val": "twoway",
+                  "offset": 14
                 }
               ],
-              "location": "LeftLinksFrameSteps.i_click_on_the_link(String)"
+              "location": "SpiceJetHomePageSD.user_selects_something_radio_button_option(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 141427900,
+              "duration": 799846500,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I should see list of \"Tables\" in the right frames",
+            "line": 9,
+            "name": "User selects From city as \"HYD\" and To city as \"DEL\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Tables",
-                  "offset": 22
+                  "val": "HYD",
+                  "offset": 27
+                },
+                {
+                  "val": "DEL",
+                  "offset": 48
                 }
               ],
-              "location": "LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"
+              "location": "SpiceJetHomePageSD.user_selects_from_city_as_something_and_to_city_as_something(String,String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 8069700,
+              "duration": 166940200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User selects Depart date as current date",
+            "match": {
+              "location": "SpiceJetHomePageSD.user_selects_depart_date_as_current_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 504341500,
               "status": "passed"
             },
             "line": 11,
-            "name": "the page title should be HTML Learning Package",
+            "name": "user select number of Passengers \"2\"",
             "match": {
-              "location": "LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 34
+                }
+              ],
+              "location": "SpiceJetHomePageSD.user_select_number_of_passengers_something(String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 148392700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user selects currency \"GBP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GBP",
+                  "offset": 23
+                }
+              ],
+              "location": "SpiceJetHomePageSD.user_selects_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4792880600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User clicks on Search button",
+            "match": {
+              "location": "SpiceJetHomePageSD.user_clicks_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 214757200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the page which asks for GST details should display",
+            "match": {
+              "location": "SpiceJetHomePageSD.the_page_which_asks_for_gst_details_should_display()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Regression"
+            "name": "@SpiceJetSanity"
           }
         ]
       }
     ],
-    "name": "Test to validate links in the left frame",
-    "description": "  In order to validate that \n  the maths surrey page is working\n  Doing the Acceptance Testing",
-    "id": "test-to-validate-links-in-the-left-frame",
+    "name": "One Way Flight Search",
+    "description": "",
+    "id": "one-way-flight-search",
     "keyword": "Feature",
-    "uri": "file:src/test/java/FeatureFiles/LeftFrameNavigateLinksMathsWebPage.feature",
+    "uri": "file:src/test/java/FeatureFiles/SpiceJetHomePage.feature",
     "tags": []
   }
 ]

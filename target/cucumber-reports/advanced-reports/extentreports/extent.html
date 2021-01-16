@@ -57,7 +57,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jan 14, 2021 10:28:23 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 16, 2021 08:41:19 am</span>
 			</a>
 		</ul>
 	</div>
@@ -84,7 +84,7 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Regression</a></li>
+					<li><a href='#'>@SpiceJetSanity</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -139,7 +139,7 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
@@ -155,7 +155,7 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>20</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>16</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
@@ -180,8 +180,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Test to validate links in the left frame</span>
-						<span class='test-time'>Jan 14, 2021 10:28:34 pm</span>
+						<span class='test-name'>One Way Flight Search</span>
+						<span class='test-time'>Jan 16, 2021 08:41:35 am</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -191,120 +191,86 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='test-desc'>In order to validate that 
-  the maths surrey page is working
-  Doing the Acceptance Testing</div>
 <div class='scenario outline node' test-id='2' status='pass'>
 	<div class='category-list'>
-		<span class='category label'>@Regression</span>
+		<span class='category label'>@SpiceJetSanity</span>
 	</div>
-	<span class='duration right label'>0h 0m 27s+399ms</span>
+	<span class='duration right label'>0h 0m 23s+54ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Validate maths surrey Page</div>
-		<table class='runtime-table table-striped table'><tr><td>linkname</td><td>header</td></tr><tr><td>Contents</td><td>Contents</td></tr><tr><td>Background</td><td>HTML Background</td></tr><tr><td>Beg's Guide</td><td>Beginner's Guide</td></tr><tr><td>HTML Tags</td><td>HTML Tags</td></tr><tr><td>Tables</td><td>Tables</td></tr></table>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: One Way Flight Search with Depart Date as current Date</div>
+		<table class='runtime-table table-striped table'><tr><td>direction</td><td>fromCity</td><td>toCity</td><td>passengercount</td><td>currency</td></tr><tr><td>oneway</td><td>DEL</td><td>HYD</td><td>1</td><td>GBP</td></tr><tr><td>twoway</td><td>HYD</td><td>DEL</td><td>2</td><td>GBP</td></tr></table>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node scenario pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Validate maths surrey Page</div>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>One Way Flight Search with Depart Date as current Date</div>
 			<ul class='gc steps'>
-				<li test-id='6' class='gc given pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website</h6>
+				<li test-id='5' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="SpiceJetHomePageSD.user_on_spicejet_landing_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given User on Spicejet landing page</h6>
 					<div class="node-step"></div>
 				</li>
-				<li test-id='7' class='gc when pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.i_click_on_the_link(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I click on the link "Contents"</h6>
+				<li test-id='6' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="SpiceJetHomePageSD.user_selects_something_radio_button_option(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When User selects "oneway" radio button option</h6>
 					<div class="node-step"></div>
 				</li>
-				<li test-id='8' class='gc then pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then I should see list of "Contents" in the right frames</h6>
+				<li test-id='7' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="SpiceJetHomePageSD.user_selects_from_city_as_something_and_to_city_as_something(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User selects From city as "DEL" and To city as "HYD"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='8' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="SpiceJetHomePageSD.user_selects_depart_date_as_current_date()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User selects Depart date as current date</h6>
 					<div class="node-step"></div>
 				</li>
 				<li test-id='9' class='gc and pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And the page title should be HTML Learning Package</h6>
+					<h6 class="step-name" title="SpiceJetHomePageSD.user_select_number_of_passengers_something(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user select number of Passengers "1"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='10' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="SpiceJetHomePageSD.user_selects_something(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user selects currency "GBP"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='11' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="SpiceJetHomePageSD.user_clicks_on_search_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User clicks on Search button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='12' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="SpiceJetHomePageSD.the_page_which_asks_for_gst_details_should_display()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then the page which asks for GST details should display</h6>
 					<div class="node-step"></div>
 				</li>
 			</ul>
 		</li>
-		<li test-id='12' class='node scenario pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Validate maths surrey Page</div>
+		<li test-id='14' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>One Way Flight Search with Depart Date as current Date</div>
 			<ul class='gc steps'>
-				<li test-id='15' class='gc given pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website</h6>
+				<li test-id='16' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="SpiceJetHomePageSD.user_on_spicejet_landing_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given User on Spicejet landing page</h6>
 					<div class="node-step"></div>
 				</li>
-				<li test-id='16' class='gc when pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.i_click_on_the_link(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I click on the link "Background"</h6>
-					<div class="node-step"></div>
-				</li>
-				<li test-id='17' class='gc then pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then I should see list of "HTML Background" in the right frames</h6>
+				<li test-id='17' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="SpiceJetHomePageSD.user_selects_something_radio_button_option(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When User selects "twoway" radio button option</h6>
 					<div class="node-step"></div>
 				</li>
 				<li test-id='18' class='gc and pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And the page title should be HTML Learning Package</h6>
+					<h6 class="step-name" title="SpiceJetHomePageSD.user_selects_from_city_as_something_and_to_city_as_something(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User selects From city as "HYD" and To city as "DEL"</h6>
 					<div class="node-step"></div>
 				</li>
-			</ul>
-		</li>
-		<li test-id='21' class='node scenario pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Validate maths surrey Page</div>
-			<ul class='gc steps'>
-				<li test-id='24' class='gc given pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website</h6>
+				<li test-id='19' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="SpiceJetHomePageSD.user_selects_depart_date_as_current_date()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User selects Depart date as current date</h6>
 					<div class="node-step"></div>
 				</li>
-				<li test-id='25' class='gc when pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.i_click_on_the_link(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I click on the link "Beg's Guide"</h6>
+				<li test-id='20' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="SpiceJetHomePageSD.user_select_number_of_passengers_something(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user select number of Passengers "2"</h6>
 					<div class="node-step"></div>
 				</li>
-				<li test-id='26' class='gc then pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then I should see list of "Beginner's Guide" in the right frames</h6>
+				<li test-id='21' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="SpiceJetHomePageSD.user_selects_something(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user selects currency "GBP"</h6>
 					<div class="node-step"></div>
 				</li>
-				<li test-id='27' class='gc and pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And the page title should be HTML Learning Package</h6>
+				<li test-id='22' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="SpiceJetHomePageSD.user_clicks_on_search_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User clicks on Search button</h6>
 					<div class="node-step"></div>
 				</li>
-			</ul>
-		</li>
-		<li test-id='30' class='node scenario pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Validate maths surrey Page</div>
-			<ul class='gc steps'>
-				<li test-id='33' class='gc given pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website</h6>
-					<div class="node-step"></div>
-				</li>
-				<li test-id='34' class='gc when pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.i_click_on_the_link(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I click on the link "HTML Tags"</h6>
-					<div class="node-step"></div>
-				</li>
-				<li test-id='35' class='gc then pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then I should see list of "HTML Tags" in the right frames</h6>
-					<div class="node-step"></div>
-				</li>
-				<li test-id='36' class='gc and pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And the page title should be HTML Learning Package</h6>
-					<div class="node-step"></div>
-				</li>
-			</ul>
-		</li>
-		<li test-id='39' class='node scenario pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Validate maths surrey Page</div>
-			<ul class='gc steps'>
-				<li test-id='42' class='gc given pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website</h6>
-					<div class="node-step"></div>
-				</li>
-				<li test-id='43' class='gc when pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.i_click_on_the_link(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I click on the link "Tables"</h6>
-					<div class="node-step"></div>
-				</li>
-				<li test-id='44' class='gc then pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then I should see list of "Tables" in the right frames</h6>
-					<div class="node-step"></div>
-				</li>
-				<li test-id='45' class='gc and pass' status='pass'>
-					<h6 class="step-name" title="LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And the page title should be HTML Learning Package</h6>
+				<li test-id='23' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="SpiceJetHomePageSD.the_page_which_asks_for_gst_details_should_display()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then the page which asks for GST details should display</h6>
 					<div class="node-step"></div>
 				</li>
 			</ul>
@@ -353,14 +319,14 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Regression</span>
+						<span class='category-name'>@SpiceJetSanity</span>
 						<span class='category-status right'>
-						<span class='label pass'>6</span>
+						<span class='label pass'>3</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 6</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
 							
 							
 						</div>
@@ -375,33 +341,18 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 14, 2021 10:28:34 pm</td>
-										<td class='linked' test-id='2'>Validate maths surrey Page</td>
+										<td>Jan 16, 2021 08:41:35 am</td>
+										<td class='linked' test-id='2'>One Way Flight Search with Depart Date as current Date</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 14, 2021 10:28:34 pm</td>
-										<td class='linked' test-id='3'>Validate maths surrey Page</td>
+										<td>Jan 16, 2021 08:41:35 am</td>
+										<td class='linked' test-id='3'>One Way Flight Search with Depart Date as current Date</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 14, 2021 10:28:40 pm</td>
-										<td class='linked' test-id='12'>Validate maths surrey Page</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 14, 2021 10:28:47 pm</td>
-										<td class='linked' test-id='21'>Validate maths surrey Page</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 14, 2021 10:28:54 pm</td>
-										<td class='linked' test-id='30'>Validate maths surrey Page</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 14, 2021 10:29:00 pm</td>
-										<td class='linked' test-id='39'>Validate maths surrey Page</td>
+										<td>Jan 16, 2021 08:41:51 am</td>
+										<td class='linked' test-id='14'>One Way Flight Search with Depart Date as current Date</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -432,31 +383,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>20</div>
+					<div class='panel-lead'>16</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 14, 2021 10:28:23 pm</div>
+					<div class='panel-lead'>Jan 16, 2021 08:41:19 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 14, 2021 10:29:01 pm</div>
+			 		<div class='panel-lead'>Jan 16, 2021 08:41:58 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 38s+72ms</div>
+					<div class='panel-lead'>0h 0m 39s+290ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -472,8 +423,8 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Regression</td>
-							<td>6</td>
+							<td>@SpiceJetSanity</td>
+							<td>3</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -499,8 +450,8 @@
 				warningParent: 0,
 				skipParent: 0,
 				exceptionsParent: 0,
-				childCount: 5,
-				passChild: 5,
+				childCount: 2,
+				passChild: 2,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -509,8 +460,8 @@
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 0,
-				grandChildCount: 20,
-				passGrandChild: 20,
+				grandChildCount: 16,
+				passGrandChild: 16,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -523,7 +474,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Test to validate links in the left frame":27.399
+			        "One Way Flight Search":23.054
 			};
 		</script>
 	

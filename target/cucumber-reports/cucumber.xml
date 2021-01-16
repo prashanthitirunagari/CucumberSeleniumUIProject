@@ -1,38 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="36.26689">
-    <testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page" time="9.743313">
-        <system-out><![CDATA[Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website.passed
-When I click on the link "Contents".........................................passed
-Then I should see list of "Contents" in the right frames....................passed
-And the page title should be HTML Learning Package..........................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="37.725615">
+    <testcase classname="One Way Flight Search" name="One Way Flight Search with Depart Date as current Date" time="21.829723">
+        <system-out><![CDATA[Given User on Spicejet landing page.........................................passed
+When User selects "oneway" radio button option..............................passed
+And User selects From city as "DEL" and To city as "HYD"....................passed
+And User selects Depart date as current date................................passed
+And user select number of Passengers "1"....................................passed
+And user selects currency "GBP".............................................passed
+And User clicks on Search button............................................passed
+Then the page which asks for GST details should display.....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page 2" time="6.982838">
-        <system-out><![CDATA[Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website.passed
-When I click on the link "Background".......................................passed
-Then I should see list of "HTML Background" in the right frames.............passed
-And the page title should be HTML Learning Package..........................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page 3" time="6.576509">
-        <system-out><![CDATA[Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website.passed
-When I click on the link "Beg's Guide"......................................passed
-Then I should see list of "Beginner's Guide" in the right frames............passed
-And the page title should be HTML Learning Package..........................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page 4" time="6.701937">
-        <system-out><![CDATA[Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website.passed
-When I click on the link "HTML Tags"........................................passed
-Then I should see list of "HTML Tags" in the right frames...................passed
-And the page title should be HTML Learning Package..........................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page 5" time="6.262293">
-        <system-out><![CDATA[Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website.passed
-When I click on the link "Tables"...........................................passed
-Then I should see list of "Tables" in the right frames......................passed
-And the page title should be HTML Learning Package..........................passed
+    <testcase classname="One Way Flight Search" name="One Way Flight Search with Depart Date as current Date 2" time="15.895892">
+        <system-out><![CDATA[Given User on Spicejet landing page.........................................passed
+When User selects "twoway" radio button option..............................passed
+And User selects From city as "HYD" and To city as "DEL"....................passed
+And User selects Depart date as current date................................passed
+And user select number of Passengers "2"....................................passed
+And user selects currency "GBP".............................................passed
+And User clicks on Search button............................................passed
+Then the page which asks for GST details should display.....................passed
 ]]></system-out>
     </testcase>
 </testsuite>

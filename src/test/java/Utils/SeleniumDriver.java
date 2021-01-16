@@ -28,10 +28,10 @@ public class SeleniumDriver {
     public static WebDriver driver;
     public static WebDriverWait waitDriver;
 
-    public final static int TIMEOUT = 5;
-    public final static int PAGE_LOAD_TIMEOUT = 5;
-    //public static String browser="chrome", url; 
-    public static String browser=System.getenv("Browser"), url;
+    public final static int TIMEOUT = 30;
+    public final static int PAGE_LOAD_TIMEOUT = 30;
+    //public static String browser=System.getenv("Browser"), url=System.getenv("ApplicationURL");
+    public static String browser="chrome", url="https://www.spicejet.com/";
     public static String gbReturnValue="";
 
     public static void loadConfigProperties() throws IOException{
@@ -47,11 +47,12 @@ public class SeleniumDriver {
     		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\geckodriver.exe");
     		FirefoxOptions ops =new FirefoxOptions();
     		ops.setPageLoadStrategy(PageLoadStrategy.NONE);
+    		ops.setBinary("");
     		/*ProfilesIni allprof = new ProfilesIni();
     		FirefoxProfile prof = allprof.getProfile("default");
     		prof.setPreference("dom.webnotifications.enabled", false);
     		ops.setProfile(prof);*/
-	        driver = new FirefoxDriver();
+	        driver = new FirefoxDriver(ops);
 	        driver.manage().window().maximize();
 
 	        waitDriver = new WebDriverWait(driver, TIMEOUT);

@@ -3,9 +3,9 @@ Feature: Test to validate links in the left frame
   the maths surrey page is working
   Doing the Acceptance Testing
 
-  @Regression
+  @MathsSanity
   Scenario Outline: Validate maths surrey Page
-    Given I am on the nigels Page "http://www.maths.surrey.ac.uk/explore/nigelspages/" of maths Website
+    Given I am on the nigels landing Page of maths Website
     When I click on the link "<linkname>"
     Then I should see list of "<header>" in the right frames
     And the page title should be HTML Learning Package

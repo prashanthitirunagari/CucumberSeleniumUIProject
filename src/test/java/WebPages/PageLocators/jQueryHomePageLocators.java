@@ -9,6 +9,10 @@ public class jQueryHomePageLocators {
 	public static String headerSupport="//*[@id='content']/h1";
 	public static String headerAbout="//*[@id='content']/h1";
 	
+	public static String JSFoundation="//*[@id='broadcast']/a/img";
 	
+	public static String fbimage="//*[@id='content']/div/div/div/div[1]/div/img";
+	
+	public static String burningglass="//*[@id='logo']";
 
 }

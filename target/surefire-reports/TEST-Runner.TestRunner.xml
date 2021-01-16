@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Runner.TestRunner" time="9.743" tests="5" errors="0" skipped="0" failures="0">
+<testsuite name="Runner.TestRunner" time="21.829" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="15.0.1+9-18"/>
@@ -24,7 +24,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\user\Pictures\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf10428363000477381032.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\user\Pictures\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf16254931627484067247.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\PostgreSQL\13\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\PuTTY\;C:\Program Files\Java\jdk-15.0.1\bin;C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\nodejs\;C:\Users\user\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\user\AppData\Local\Programs\Python\Python39\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Users\user\AppData\Roaming\npm;."/>
     <property name="jdk.debug" value="release"/>
@@ -55,9 +55,6 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Validate maths surrey Page" classname="Test to validate links in the left frame" time="9.743"/>
-  <testcase name="Validate maths surrey Page" classname="Test to validate links in the left frame" time="6.982"/>
-  <testcase name="Validate maths surrey Page" classname="Test to validate links in the left frame" time="6.578"/>
-  <testcase name="Validate maths surrey Page" classname="Test to validate links in the left frame" time="6.702"/>
-  <testcase name="Validate maths surrey Page" classname="Test to validate links in the left frame" time="6.262"/>
+  <testcase name="One Way Flight Search with Depart Date as current Date" classname="One Way Flight Search" time="21.829"/>
+  <testcase name="One Way Flight Search with Depart Date as current Date" classname="One Way Flight Search" time="15.896"/>
 </testsuite>

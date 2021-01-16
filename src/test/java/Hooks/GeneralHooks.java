@@ -3,18 +3,17 @@ package Hooks;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import Utils.SeleniumDriver;
+import io.cucumber.core.api.Scenario;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 
 public class GeneralHooks {
 	
-	@Before
+	@Before()
 	public void setup(Scenario name){
 		SeleniumDriver.InitializeDriver();
-		//name.getName();
-		//name.getStatus();
+		SeleniumDriver.openPage(SeleniumDriver.url);
 	}
 	
 	
@@ -27,7 +26,6 @@ public class GeneralHooks {
 		}
 		if (SeleniumDriver.driver != null) {
 			SeleniumDriver.driver.close();
-			//SeleniumDriver.driver.quit();
         }
         
 	}

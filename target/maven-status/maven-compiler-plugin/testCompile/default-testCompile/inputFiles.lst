@@ -1,12 +1,13 @@
 C:\Users\user\Pictures\CucumberSeleniumUIProject\src\test\java\Utils\SeleniumDriver.java
+C:\Users\user\Pictures\CucumberSeleniumUIProject\src\test\java\StepDefinitions\JunitTests.java
 C:\Users\user\Pictures\CucumberSeleniumUIProject\src\test\java\Utils\SeleniumHelper.java
 C:\Users\user\Pictures\CucumberSeleniumUIProject\src\test\java\StepDefinitions\JQueryDroppableSD.java
 C:\Users\user\Pictures\CucumberSeleniumUIProject\src\test\java\WebPages\PageLocators\jQueryDroppableLocators.java
 C:\Users\user\Pictures\CucumberSeleniumUIProject\src\test\java\StepDefinitions\JQueryStepDef.java
 C:\Users\user\Pictures\CucumberSeleniumUIProject\src\test\java\WebPages\PageLocators\jQueryHomePageLocators.java
-C:\Users\user\Pictures\CucumberSeleniumUIProject\src\test\java\StepDefinitions\ProdLoginStep.java
-C:\Users\user\Pictures\CucumberSeleniumUIProject\src\test\java\StepDefinitions\LoginStep.java
+C:\Users\user\Pictures\CucumberSeleniumUIProject\src\test\java\StepDefinitions\SpiceJetHomePageSD.java
 C:\Users\user\Pictures\CucumberSeleniumUIProject\src\test\java\WebPages\PageActions\PageActions.java
+C:\Users\user\Pictures\CucumberSeleniumUIProject\src\test\java\WebPages\PageLocators\SpiceJetHomePage.java
 C:\Users\user\Pictures\CucumberSeleniumUIProject\src\test\java\Hooks\GeneralHooks.java
 C:\Users\user\Pictures\CucumberSeleniumUIProject\src\test\java\Runner\TestRunner.java
 C:\Users\user\Pictures\CucumberSeleniumUIProject\src\test\java\StepDefinitions\LeftLinksFrameSteps.java

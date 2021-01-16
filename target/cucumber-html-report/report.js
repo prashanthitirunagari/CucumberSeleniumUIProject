@@ -1,34 +1,50 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/FeatureFiles/LeftFrameNavigateLinksMathsWebPage.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/FeatureFiles/SpiceJetHomePage.feature");
 formatter.feature({
-  "name": "Test to validate links in the left frame",
-  "description": "  In order to validate that \n  the maths surrey page is working\n  Doing the Acceptance Testing",
+  "name": "One Way Flight Search",
+  "description": "",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "Validate maths surrey Page",
+  "name": "One Way Flight Search with Depart Date as current Date",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Regression"
+      "name": "@SpiceJetSanity"
     }
   ]
 });
 formatter.step({
-  "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
+  "name": "User on Spicejet landing page",
   "keyword": "Given "
 });
 formatter.step({
-  "name": "I click on the link \"\u003clinkname\u003e\"",
+  "name": "User selects \"\u003cdirection\u003e\" radio button option",
   "keyword": "When "
 });
 formatter.step({
-  "name": "I should see list of \"\u003cheader\u003e\" in the right frames",
-  "keyword": "Then "
+  "name": "User selects From city as \"\u003cfromCity\u003e\" and To city as \"\u003ctoCity\u003e\"",
+  "keyword": "And "
 });
 formatter.step({
-  "name": "the page title should be HTML Learning Package",
+  "name": "User selects Depart date as current date",
   "keyword": "And "
+});
+formatter.step({
+  "name": "user select number of Passengers \"\u003cpassengercount\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user selects currency \"\u003ccurrency\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "User clicks on Search button",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "the page which asks for GST details should display",
+  "keyword": "Then "
 });
 formatter.examples({
   "name": "",
@@ -37,347 +53,220 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "linkname",
-        "header"
+        "direction",
+        "fromCity",
+        "toCity",
+        "passengercount",
+        "currency"
       ]
     },
     {
       "cells": [
-        "Contents",
-        "Contents"
+        "oneway",
+        "DEL",
+        "HYD",
+        "1",
+        "GBP"
       ]
     },
     {
       "cells": [
-        "Background",
-        "HTML Background"
-      ]
-    },
-    {
-      "cells": [
-        "Beg\u0027s Guide",
-        "Beginner\u0027s Guide"
-      ]
-    },
-    {
-      "cells": [
-        "HTML Tags",
-        "HTML Tags"
-      ]
-    },
-    {
-      "cells": [
-        "Tables",
-        "Tables"
+        "twoway",
+        "HYD",
+        "DEL",
+        "2",
+        "GBP"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Validate maths surrey Page",
+  "name": "One Way Flight Search with Depart Date as current Date",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Regression"
+      "name": "@SpiceJetSanity"
     }
   ]
 });
 formatter.before({
   "status": "passed"
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
+  "name": "User on Spicejet landing page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"
+  "location": "SpiceJetHomePageSD.user_on_spicejet_landing_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on the link \"Contents\"",
+  "name": "User selects \"oneway\" radio button option",
   "keyword": "When "
 });
 formatter.match({
-  "location": "LeftLinksFrameSteps.i_click_on_the_link(String)"
+  "location": "SpiceJetHomePageSD.user_selects_something_radio_button_option(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I should see list of \"Contents\" in the right frames",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the page title should be HTML Learning Package",
+  "name": "User selects From city as \"DEL\" and To city as \"HYD\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validate maths surrey Page",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Regression"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"
+  "location": "SpiceJetHomePageSD.user_selects_from_city_as_something_and_to_city_as_something(String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on the link \"Background\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "LeftLinksFrameSteps.i_click_on_the_link(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I should see list of \"HTML Background\" in the right frames",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the page title should be HTML Learning Package",
+  "name": "User selects Depart date as current date",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"
+  "location": "SpiceJetHomePageSD.user_selects_depart_date_as_current_date()"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.after({
+formatter.step({
+  "name": "user select number of Passengers \"1\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SpiceJetHomePageSD.user_select_number_of_passengers_something(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user selects currency \"GBP\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SpiceJetHomePageSD.user_selects_something(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on Search button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SpiceJetHomePageSD.user_clicks_on_search_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the page which asks for GST details should display",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SpiceJetHomePageSD.the_page_which_asks_for_gst_details_should_display()"
+});
+formatter.result({
   "status": "passed"
 });
 formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Validate maths surrey Page",
+  "name": "One Way Flight Search with Depart Date as current Date",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Regression"
+      "name": "@SpiceJetSanity"
     }
   ]
 });
 formatter.before({
   "status": "passed"
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
+  "name": "User on Spicejet landing page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"
+  "location": "SpiceJetHomePageSD.user_on_spicejet_landing_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on the link \"Beg\u0027s Guide\"",
+  "name": "User selects \"twoway\" radio button option",
   "keyword": "When "
 });
 formatter.match({
-  "location": "LeftLinksFrameSteps.i_click_on_the_link(String)"
+  "location": "SpiceJetHomePageSD.user_selects_something_radio_button_option(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I should see list of \"Beginner\u0027s Guide\" in the right frames",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the page title should be HTML Learning Package",
+  "name": "User selects From city as \"HYD\" and To city as \"DEL\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validate maths surrey Page",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Regression"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"
+  "location": "SpiceJetHomePageSD.user_selects_from_city_as_something_and_to_city_as_something(String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on the link \"HTML Tags\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "LeftLinksFrameSteps.i_click_on_the_link(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I should see list of \"HTML Tags\" in the right frames",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the page title should be HTML Learning Package",
+  "name": "User selects Depart date as current date",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validate maths surrey Page",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Regression"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am on the nigels Page \"http://www.maths.surrey.ac.uk/explore/nigelspages/\" of maths Website",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LeftLinksFrameSteps.i_am_on_the_nigels_Page_of_maths_Website(String)"
+  "location": "SpiceJetHomePageSD.user_selects_depart_date_as_current_date()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on the link \"Tables\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "LeftLinksFrameSteps.i_click_on_the_link(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I should see list of \"Tables\" in the right frames",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LeftLinksFrameSteps.i_should_see_list_of_in_the_right_frames(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the page title should be HTML Learning Package",
+  "name": "user select number of Passengers \"2\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LeftLinksFrameSteps.the_page_title_should_be_HTML_Learning_Package()"
+  "location": "SpiceJetHomePageSD.user_select_number_of_passengers_something(String)"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.after({
+formatter.step({
+  "name": "user selects currency \"GBP\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SpiceJetHomePageSD.user_selects_something(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on Search button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SpiceJetHomePageSD.user_clicks_on_search_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the page which asks for GST details should display",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SpiceJetHomePageSD.the_page_which_asks_for_gst_details_should_display()"
+});
+formatter.result({
   "status": "passed"
 });
 formatter.after({

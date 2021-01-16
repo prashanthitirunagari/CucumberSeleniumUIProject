@@ -14,9 +14,13 @@ import io.cucumber.java.en.When;
 
 public class JQueryStepDef extends SeleniumDriver{
 
-	@Given("^User access jqueryui \"([^\"]*)\" site$")
+	@Given("^User is in the jQuery landing page$")
 	public void user_access_jqueryui_site(String url) {
-		openPage(url);
+		if(SeleniumHelper.GetPageTitle().trim().equals("jQuery UI")){
+			Assert.assertTrue("actual and expected are same", true);
+		}else{
+			Assert.assertFalse(true);
+		}
 	}
 
 	@Then("^the page title should be \"([^\"]*)\"$")
@@ -38,7 +42,21 @@ public class JQueryStepDef extends SeleniumDriver{
 		//SeleniumHelper.ObjectLink(menuName,Locator.PartialLinkText,"Click","");
 		driver.findElement(By.partialLinkText(menuName)).click();
 	}
+	
+	@Then("^Both the images should be same$")
+	public void js_image_comparision() {
+		
+		System.out.println(System.getProperty("user.dir") + "\\src\\test\\resources\\jQuerySupportJSFoundation.png");
+		boolean flag = SeleniumHelper.verifyImage(System.getProperty("user.dir")+"\\src\\test\\resources\\burning-glass.png", SeleniumHelper.GetWebElement(jQueryHomePageLocators.burningglass,Locator.XPath));
+		
+		if(flag) {
+			Assert.assertTrue("Both the images are equal", true);
+		}else {
+			Assert.assertFalse(true);
+		}
+	}
 
+	
 	@Then("^menu screen \"([^\"]*)\" should display$")
 	public void menu_screen_should_display(String headerName) {
 		String element="";
