@@ -15,7 +15,7 @@ import io.cucumber.java.en.When;
 public class JQueryStepDef extends SeleniumDriver{
 
 	@Given("^User is in the jQuery landing page$")
-	public void user_access_jqueryui_site(String url) {
+	public void user_access_jqueryui_site() {
 		if(SeleniumHelper.GetPageTitle().trim().equals("jQuery UI")){
 			Assert.assertTrue("actual and expected are same", true);
 		}else{
