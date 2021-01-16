@@ -1,14 +1,21 @@
 pipeline{
   agent any
+  parameters {
+        choice(name: 'Browser', choices: ['chrome', 'firefox'], description: 'Pick browser option')
+	choice(name: 'TestingType', choices: ['SpiceJetSanity', 'JQuerySanity', 'MathsSanity'], description: 'Choose the tag to execute')
+	choice(name: 'ApplicationURL', choices: ['https://www.spicejet.com/', 'https://jqueryui.com/', 'http://www.maths.surrey.ac.uk/explore/nigelspages/'], description: 'Select application to execute')
+    }
   stages {
-    stage('build'){
+    stage('clean'){
       steps {
-        echo 'build the application'
+        echo 'Clean the application'
+	mvn clean
         }
       }
    stage('test'){
      steps {
        echo 'test the application'
+       mvn install -Dcucumber.options="--tags @"$TestingType""
        }
       }
     }

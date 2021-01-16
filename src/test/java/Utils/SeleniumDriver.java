@@ -1,8 +1,5 @@
 package Utils;
 
-
-
-
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,7 +11,6 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -55,7 +51,6 @@ public class SeleniumDriver {
     		ops.setProfile(prof);*/
 	        driver = new FirefoxDriver(ops);
 	        driver.manage().window().maximize();
-	        //waitDriver = new WebDriverWait(driver, TIMEOUT);
 	        driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
 	        driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 	     }else if(browser.toLowerCase().equals("chrome")){
@@ -67,19 +62,11 @@ public class SeleniumDriver {
     		ops.setPageLoadStrategy(PageLoadStrategy.NORMAL);
             ops.setAcceptInsecureCerts(true);
             driver = new ChromeDriver(ops);
-           
-            //waitDriver = new WebDriverWait(driver, TIMEOUT);
             driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
             driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-            String window=driver.getWindowHandle();
-            System.out.println("Window ->"+window);
     	}else if(browser.toLowerCase().equals("ie")){
     		System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\IEDriverServer.exe");
-    		
-            
             driver = new InternetExplorerDriver();
-           
-            
     	}
 
     }
@@ -98,7 +85,6 @@ public class SeleniumDriver {
     	try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
     }
