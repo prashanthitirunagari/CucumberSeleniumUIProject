@@ -48,6 +48,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -57,7 +58,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jan 16, 2021 08:41:19 am</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 16, 2021 10:18:17 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -73,6 +74,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -125,10 +127,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -139,10 +141,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -155,10 +157,10 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>16</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='94.118%'><span class='strong'>16</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='5.882%'>1</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -178,11 +180,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>One Way Flight Search</span>
-						<span class='test-time'>Jan 16, 2021 08:41:35 am</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Jan 16, 2021 10:18:32 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -191,18 +193,18 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario outline node' test-id='2' status='pass'>
+<div class='scenario outline node' test-id='2' status='fail'>
 	<div class='category-list'>
 		<span class='category label'>@SpiceJetSanity</span>
 	</div>
-	<span class='duration right label'>0h 0m 23s+54ms</span>
+	<span class='duration right label'>0h 0m 58s+351ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: One Way Flight Search with Depart Date as current Date</div>
+		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario Outline: One Way Flight Search with Depart Date as current Date</div>
 		<table class='runtime-table table-striped table'><tr><td>direction</td><td>fromCity</td><td>toCity</td><td>passengercount</td><td>currency</td></tr><tr><td>oneway</td><td>DEL</td><td>HYD</td><td>1</td><td>GBP</td></tr><tr><td>twoway</td><td>HYD</td><td>DEL</td><td>2</td><td>GBP</td></tr></table>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>One Way Flight Search with Depart Date as current Date</div>
+		<li test-id='3' class='node scenario fail' status='fail'>
+			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>One Way Flight Search with Depart Date as current Date</div>
 			<ul class='gc steps'>
 				<li test-id='5' class='gc given pass' status='pass'>
 					<h6 class="step-name" title="SpiceJetHomePageSD.user_on_spicejet_landing_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given User on Spicejet landing page</h6>
@@ -232,8 +234,20 @@
 					<h6 class="step-name" title="SpiceJetHomePageSD.user_clicks_on_search_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User clicks on Search button</h6>
 					<div class="node-step"></div>
 				</li>
-				<li test-id='12' class='gc then pass' status='pass'>
-					<h6 class="step-name" title="SpiceJetHomePageSD.the_page_which_asks_for_gst_details_should_display()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then the page which asks for GST details should display</h6>
+				<li test-id='12' class='gc then fail' status='fail'>
+					<h6 class="step-name" title="SpiceJetHomePageSD.the_page_which_asks_for_gst_details_should_display()"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Then the page which asks for GST details should display</h6>
+					<textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at Utils.SeleniumHelper.ObjectText(SeleniumHelper.java:151)
+	at StepDefinitions.SpiceJetHomePageSD.the_page_which_asks_for_gst_details_should_display(SpiceJetHomePageSD.java:45)
+	at ?.the page which asks for GST details should display(file:src/test/java/FeatureFiles/SpiceJetHomePage.feature:14)
+</textarea>
+				</li>
+				<li test-id='13' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>GeneralHooks.tearDown(Scenario)</h6>
 					<div class="node-step"></div>
 				</li>
 			</ul>
@@ -321,13 +335,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>@SpiceJetSanity</span>
 						<span class='category-status right'>
-						<span class='label pass'>3</span>
+						<span class='label pass'>1</span>
+						<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
-							
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -341,17 +356,17 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 16, 2021 08:41:35 am</td>
+										<td>Jan 16, 2021 10:18:32 AM</td>
 										<td class='linked' test-id='2'>One Way Flight Search with Depart Date as current Date</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jan 16, 2021 08:41:35 am</td>
+										<td>Jan 16, 2021 10:18:32 AM</td>
 										<td class='linked' test-id='3'>One Way Flight Search with Depart Date as current Date</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jan 16, 2021 08:41:51 am</td>
+										<td>Jan 16, 2021 10:19:22 AM</td>
 										<td class='linked' test-id='14'>One Way Flight Search with Depart Date as current Date</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -369,7 +384,70 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>java.lang.AssertionError</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jan 16, 2021 10:18:39 AM</td>
+										<td class='linked' test-id='12'>Then the page which asks for GST details should display</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at Utils.SeleniumHelper.ObjectText(SeleniumHelper.java:151)
+	at StepDefinitions.SpiceJetHomePageSD.the_page_which_asks_for_gst_details_should_display(SpiceJetHomePageSD.java:45)
+	at ?.the page which asks for GST details should display(file:src/test/java/FeatureFiles/SpiceJetHomePage.feature:14)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -389,25 +467,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>16</div>
+					<div class='panel-lead'>17</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 16, 2021 08:41:19 am</div>
+					<div class='panel-lead'>Jan 16, 2021 10:18:17 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 16, 2021 08:41:58 am</div>
+			 		<div class='panel-lead'>Jan 16, 2021 10:19:33 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 39s+290ms</div>
+					<div class='panel-lead'>0h 1m 15s+215ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -424,11 +502,11 @@
 						</tr>
 						<tr>
 							<td>@SpiceJetSanity</td>
-							<td>3</td>
-							<td>0</td>
+							<td>1</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
-									100%
+									33.333%
 							</td>
 						</tr>
 					</table>
@@ -443,38 +521,38 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				childCount: 2,
-				passChild: 2,
-				failChild: 0,
+				passChild: 1,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 0,
-				grandChildCount: 16,
+				exceptionsChild: 1,
+				grandChildCount: 17,
 				passGrandChild: 16,
-				failGrandChild: 0,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 1,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "One Way Flight Search":23.054
+			        "One Way Flight Search":58.351
 			};
 		</script>
 	

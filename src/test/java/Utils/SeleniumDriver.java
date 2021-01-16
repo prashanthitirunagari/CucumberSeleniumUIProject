@@ -31,8 +31,8 @@ public class SeleniumDriver {
 
     public final static int TIMEOUT = 30;
     public final static int PAGE_LOAD_TIMEOUT = 30;
-    public static String browser=System.getenv("Browser"), url=System.getenv("ApplicationURL");
-    //public static String browser="chrome", url="https://www.spicejet.com/";
+    //public static String browser=System.getenv("Browser"), url=System.getenv("ApplicationURL");
+    public static String browser="firefox", url="https://www.spicejet.com/";
     public static String gbReturnValue="";
 
     public static void loadConfigProperties() throws IOException{
@@ -43,19 +43,21 @@ public class SeleniumDriver {
     	url = prop.getProperty("applicationURL");
     }
     
-    public static void InitializeDriver() {
+    public static void InitializeDriver() throws InterruptedException {
     	if(browser.toLowerCase().equals("firefox")){
     		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\geckodriver.exe");
     		FirefoxOptions ops =new FirefoxOptions();
-    		ops.setPageLoadStrategy(PageLoadStrategy.NONE);
-    		ops.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
+    		ops.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+    		//ops.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
     		/*ProfilesIni allprof = new ProfilesIni();
     		FirefoxProfile prof = allprof.getProfile("default");
     		prof.setPreference("dom.webnotifications.enabled", false);
     		ops.setProfile(prof);*/
 	        driver = new FirefoxDriver(ops);
 	        driver.manage().window().maximize();
+	        //waitDriver = new WebDriverWait(driver, TIMEOUT);
 	        driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
+	        driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 	     }else if(browser.toLowerCase().equals("chrome")){
     		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\chromedriver.exe");
     		ChromeOptions ops = new ChromeOptions();
@@ -64,11 +66,9 @@ public class SeleniumDriver {
     		ops.addArguments("--start-maximized");
     		ops.setPageLoadStrategy(PageLoadStrategy.NORMAL);
             ops.setAcceptInsecureCerts(true);
-            
-            
             driver = new ChromeDriver(ops);
            
-            waitDriver = new WebDriverWait(driver, TIMEOUT);
+            //waitDriver = new WebDriverWait(driver, TIMEOUT);
             driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
             driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
             String window=driver.getWindowHandle();

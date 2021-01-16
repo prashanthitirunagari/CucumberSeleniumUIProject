@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="37.725615">
-    <testcase classname="One Way Flight Search" name="One Way Flight Search with Depart Date as current Date" time="21.829723">
-        <system-out><![CDATA[Given User on Spicejet landing page.........................................passed
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="74.413947">
+<testcase classname="One Way Flight Search" name="One Way Flight Search with Depart Date as current Date" time="53.139244">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:87)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:65)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:75)&#13;&#10;&#9;at Utils.SeleniumHelper.ObjectText(SeleniumHelper.java:151)&#13;&#10;&#9;at StepDefinitions.SpiceJetHomePageSD.the_page_which_asks_for_gst_details_should_display(SpiceJetHomePageSD.java:45)&#13;&#10;&#9;at ✽.the page which asks for GST details should display(file:src/test/java/FeatureFiles/SpiceJetHomePage.feature:14)&#13;&#10;"><![CDATA[Given User on Spicejet landing page.........................................passed
 When User selects "oneway" radio button option..............................passed
 And User selects From city as "DEL" and To city as "HYD"....................passed
 And User selects Depart date as current date................................passed
 And user select number of Passengers "1"....................................passed
 And user selects currency "GBP".............................................passed
 And User clicks on Search button............................................passed
-Then the page which asks for GST details should display.....................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="One Way Flight Search" name="One Way Flight Search with Depart Date as current Date 2" time="15.895892">
-        <system-out><![CDATA[Given User on Spicejet landing page.........................................passed
+Then the page which asks for GST details should display.....................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at Utils.SeleniumHelper.ObjectText(SeleniumHelper.java:151)
+	at StepDefinitions.SpiceJetHomePageSD.the_page_which_asks_for_gst_details_should_display(SpiceJetHomePageSD.java:45)
+	at ✽.the page which asks for GST details should display(file:src/test/java/FeatureFiles/SpiceJetHomePage.feature:14)
+]]></failure>
+</testcase>
+<testcase classname="One Way Flight Search" name="One Way Flight Search with Depart Date as current Date 2" time="21.274703">
+<system-out><![CDATA[Given User on Spicejet landing page.........................................passed
 When User selects "twoway" radio button option..............................passed
 And User selects From city as "HYD" and To city as "DEL"....................passed
 And User selects Depart date as current date................................passed
@@ -21,5 +31,5 @@ And user selects currency "GBP".............................................pass
 And User clicks on Search button............................................passed
 Then the page which asks for GST details should display.....................passed
 ]]></system-out>
-    </testcase>
+</testcase>
 </testsuite>

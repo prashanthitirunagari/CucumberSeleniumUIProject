@@ -11,7 +11,7 @@ import io.cucumber.java.Before;
 public class GeneralHooks {
 	
 	@Before()
-	public void setup(Scenario name){
+	public void setup(Scenario name) throws InterruptedException{
 		SeleniumDriver.InitializeDriver();
 		SeleniumDriver.openPage(SeleniumDriver.url);
 	}

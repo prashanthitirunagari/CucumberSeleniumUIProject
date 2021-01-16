@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>CucumberSeleniumUIProject</td>
         <td>1</td>
-      <td>16 Jan 2021, 08:42</td>
+      <td>16 Jan 2021, 10:16</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">One Way Flight Search</td>
-          <td      class="passed"    >16</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >9</td>
+          <td      class="failed"    >2</td>
+          <td     class="skipped"   >5</td>
           <td >0</td>
           <td >0</td>
           <td class="total">16</td>
 
-          <td  class="passed"    >2</td>
           <td >0</td>
+          <td  class="failed"    >2</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="14120205600">14.120</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="69318112700">1:9.318</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -173,7 +173,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">One Way Flight Search</span>
 
@@ -193,12 +193,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">7.298</span>
+  <span class="lead-duration duration">37.591</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">One Way Flight Search with Depart Date as current Date</span>
 
@@ -209,7 +209,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -231,7 +231,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">GeneralHooks.setup(Scenario)</span>
 
-  <span class="lead-duration duration">14.263</span>
+  <span class="lead-duration duration">12.663</span>
 
           </div>
 
@@ -248,9 +248,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -260,7 +260,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -268,7 +268,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">User on Spicejet landing page</span>
 
-  <span class="lead-duration duration">0.203</span>
+  <span class="lead-duration duration">0.242</span>
 
 </div>
 
@@ -295,7 +295,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">User selects &quot;<span class="argument">oneway</span>&quot; radio button option</span>
 
-  <span class="lead-duration duration">0.144</span>
+  <span class="lead-duration duration">0.193</span>
 
 </div>
 
@@ -322,7 +322,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">User selects From city as &quot;<span class="argument">DEL</span>&quot; and To city as &quot;<span class="argument">HYD</span>&quot;</span>
 
-  <span class="lead-duration duration">0.931</span>
+  <span class="lead-duration duration">1.457</span>
 
 </div>
 
@@ -349,7 +349,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">User selects Depart date as current date</span>
 
-  <span class="lead-duration duration">0.219</span>
+  <span class="lead-duration duration">0.246</span>
 
 </div>
 
@@ -376,7 +376,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user select number of Passengers &quot;<span class="argument">1</span>&quot;</span>
 
-  <span class="lead-duration duration">0.474</span>
+  <span class="lead-duration duration">0.473</span>
 
 </div>
 
@@ -403,7 +403,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user selects currency &quot;<span class="argument">GBP</span>&quot;</span>
 
-  <span class="lead-duration duration">0.177</span>
+  <span class="lead-duration duration">0.184</span>
 
 </div>
 
@@ -430,7 +430,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">User clicks on Search button</span>
 
-  <span class="lead-duration duration">4.949</span>
+  <span class="lead-duration duration">4.631</span>
 
 </div>
 
@@ -453,11 +453,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">the page which asks for GST details should display</span>
 
-  <span class="lead-duration duration">0.196</span>
+  <span class="lead-duration duration">30.162</span>
 
 </div>
 
@@ -465,6 +465,25 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>java.lang.AssertionError</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at Utils.SeleniumHelper.ObjectText(SeleniumHelper.java:151)
+	at StepDefinitions.SpiceJetHomePageSD.the_page_which_asks_for_gst_details_should_display(SpiceJetHomePageSD.java:45)
+	at &#10045;.the page which asks for GST details should display(file:src/test/java/FeatureFiles/SpiceJetHomePage.feature:14)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -484,7 +503,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -496,13 +515,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">GeneralHooks.tearDown(Scenario)</span>
 
-  <span class="lead-duration duration">0.148</span>
+  <span class="lead-duration duration">0.498</span>
 
           </div>
 
@@ -511,6 +530,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-261243644.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-261243644.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
@@ -529,12 +563,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">6.821</span>
+  <span class="lead-duration duration">31.726</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">One Way Flight Search with Depart Date as current Date</span>
 
@@ -545,11 +579,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details ">
+  <div id="element-7" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -561,13 +595,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-6" class="inner-level collapse collapsable-details ">
+    <div id="before-8" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">GeneralHooks.setup(Scenario)</span>
 
-  <span class="lead-duration duration">8.926</span>
+  <span class="lead-duration duration">10.461</span>
 
           </div>
 
@@ -584,9 +618,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -596,7 +630,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-7" class="inner-level collapse collapsable-details ">
+  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -604,7 +638,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">User on Spicejet landing page</span>
 
-  <span class="lead-duration duration">0.022</span>
+  <span class="lead-duration duration">0.035</span>
 
 </div>
 
@@ -631,7 +665,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">User selects &quot;<span class="argument">twoway</span>&quot; radio button option</span>
 
-  <span class="lead-duration duration">0.171</span>
+  <span class="lead-duration duration">0.330</span>
 
 </div>
 
@@ -654,11 +688,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">User selects From city as &quot;<span class="argument">HYD</span>&quot; and To city as &quot;<span class="argument">DEL</span>&quot;</span>
 
-  <span class="lead-duration duration">0.799</span>
+  <span class="lead-duration duration">31.350</span>
 
 </div>
 
@@ -666,6 +700,39 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>org.openqa.selenium.ElementNotInteractableException:</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-LIT0RJ3', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55120}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: ac421c9a1c9735d637b0cd06df57b63d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:238)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at StepDefinitions.SpiceJetHomePageSD.user_selects_from_city_as_something_and_to_city_as_something(SpiceJetHomePageSD.java:39)
+	at &#10045;.User selects From city as &quot;HYD&quot; and To city as &quot;DEL&quot;(file:src/test/java/FeatureFiles/SpiceJetHomePage.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -681,11 +748,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User selects Depart date as current date</span>
 
-  <span class="lead-duration duration">0.166</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -708,11 +775,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user select number of Passengers &quot;<span class="argument">2</span>&quot;</span>
 
-  <span class="lead-duration duration">0.504</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -735,11 +802,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user selects currency &quot;<span class="argument">GBP</span>&quot;</span>
 
-  <span class="lead-duration duration">0.148</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -762,11 +829,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks on Search button</span>
 
-  <span class="lead-duration duration">4.792</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -789,11 +856,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">the page which asks for GST details should display</span>
 
-  <span class="lead-duration duration">0.214</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -820,7 +887,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -832,13 +899,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-8" class="inner-level collapse collapsable-details ">
+    <div id="after-11" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">GeneralHooks.tearDown(Scenario)</span>
 
-  <span class="lead-duration duration">0.137</span>
+  <span class="lead-duration duration">0.905</span>
 
           </div>
 
@@ -847,6 +914,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_30923629.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-12" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_30923629.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>

@@ -4,7 +4,7 @@ Feature: Test to validate Drag & Drop with frames in Droppable Feature
   Background: 
 	Given User is in the jQuery landing page
   
-  @Sanity
+  @JQuerySanity
   Scenario: Drag & Drop in a Frame
     When User should clicks on Droppable link
     And User switches to respective frame 
