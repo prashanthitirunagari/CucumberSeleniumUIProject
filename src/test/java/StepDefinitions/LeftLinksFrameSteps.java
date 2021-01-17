@@ -19,7 +19,7 @@ public class LeftLinksFrameSteps extends SeleniumDriver{
 		if(SeleniumHelper.GetPageTitle().contains("HTML Learning Package")){
 			Assert.assertTrue("actual and expected are same", true);
 		}else{
-			Assert.assertFalse(true);
+			Assert.assertFalse("Actual title of the page is "+SeleniumHelper.GetPageTitle()+"Expected title of the page is HTML Learning Package",false);
 		}
 	}
 
@@ -77,7 +77,7 @@ public class LeftLinksFrameSteps extends SeleniumDriver{
 		}else if(headerName.toLowerCase().equals("tables")){
 			 element = CommonPageLocators.tables;
 		}
-		SeleniumHelper.ObjectText(element,Locator.XPath,"ReadValue","");
+		SeleniumHelper.ObjectText(element,Locator.XPath,"ReadValue","",headerName);
 		System.out.println("ActualText="+gbReturnValue);
 		System.out.println("Expected Text="+headerName);
 		if (gbReturnValue.trim().equals(headerName)){

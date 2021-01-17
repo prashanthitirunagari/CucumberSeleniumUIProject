@@ -19,7 +19,7 @@ public class JQueryStepDef extends SeleniumDriver{
 		if(SeleniumHelper.GetPageTitle().trim().equals("jQuery UI")){
 			Assert.assertTrue("actual and expected are same", true);
 		}else{
-			Assert.assertFalse(true);
+			Assert.assertFalse("Actual title of the page is "+SeleniumHelper.GetPageTitle()+"Expected title of the page is jQuery UI",false);
 		}
 	}
 
@@ -76,7 +76,7 @@ public class JQueryStepDef extends SeleniumDriver{
 		}else if(headerName.toLowerCase().equals("about jquery ui")){
 			 element = jQueryHomePageLocators.headerAbout;
 		}
-		SeleniumHelper.ObjectText(element,Locator.XPath,"ReadValue","");
+		SeleniumHelper.ObjectText(element,Locator.XPath,"ReadValue","",headerName);
 		if (gbReturnValue.trim().equals(headerName)){
 			Assert.assertTrue("actual and expected are same", true);
 		}else {

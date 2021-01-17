@@ -15,5 +15,5 @@ Feature: One Way Flight Search
     
     Examples:
     |direction	|fromCity|toCity|passengercount|currency|
-    |oneway		|DEL	 |HYD	|1			   |GBP		|
+    |oneway		|DEL	 |SAG	|1			   |GBP		|
     |twoway		|HYD	 |DEL	|2			   |GBP		|

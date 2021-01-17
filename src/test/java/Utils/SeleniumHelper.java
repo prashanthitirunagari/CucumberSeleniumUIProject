@@ -75,6 +75,7 @@ public class SeleniumHelper extends SeleniumDriver{
             boolean isPresent = webElement.isDisplayed();
             return isPresent;
         } catch (NoSuchElementException e) {
+        	Assert.assertFalse("Object Webelement Not Found",true);
             return false;
         }
     }
@@ -84,9 +85,9 @@ public class SeleniumHelper extends SeleniumDriver{
         try
         {
             return driver.findElement(SetbyElement(locator, element));
-        }
-        catch (Exception e)
+        }catch (Exception e)
         {
+        	Assert.assertFalse("Object "+ element+" Not Found",true);
             return null;
         }
     }
@@ -101,20 +102,18 @@ public class SeleniumHelper extends SeleniumDriver{
                 {
                     elementObj.click();
                     return true;
-                }
-                catch (Exception e)
+                }catch (Exception e)
                 {
-                	Assert.assertFalse(true);
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ObjectExist":
                 if (elementObj.isDisplayed())
                 {
                     return true;
-                }
-                else
+                }else
                 {
-                	Assert.assertFalse(true);
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ReadValue":
@@ -125,7 +124,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 catch (Exception e)
                 {
-                	Assert.assertFalse(true);
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             default:
@@ -133,7 +132,7 @@ public class SeleniumHelper extends SeleniumDriver{
         }
     }
     
-    public static boolean ObjectText(String element, Locator Locator,  String Action, String ActionData)
+    public static boolean ObjectText(String element, Locator Locator,  String Action, String ActionData,String FieldName)
     {
         WebElement elementObj = GetWebElement(element, Locator);
 
@@ -145,10 +144,9 @@ public class SeleniumHelper extends SeleniumDriver{
                 {
                     gbReturnValue = elementObj.getText().trim();
                     return true;
-                }
-                catch (Exception e)
+                }catch (Exception e)
                 {
-                	Assert.assertFalse(true);
+                	Assert.assertFalse("Object "+ FieldName+" Not Found",true);
                     return false;
                 }
 
@@ -159,29 +157,26 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 else
                 {
-                	Assert.assertFalse(true);
+                	Assert.assertFalse("Object "+ FieldName+" Not Found",true);
                     return false;
                 }
             case "ObjectEnabled":
                 if (elementObj.isEnabled())
                 {
-                	Assert.assertFalse(true);
-                    return true;
-                }
-                else
+                	return true;
+                }else
                 {
-                	Assert.assertFalse(true);
-                    return false;
+                	Assert.assertFalse("Object "+ FieldName+" Not Found",true);
+                	return false;
                 }
             case "VerifyValue":
                 try
                 {
                     if(elementObj.getText().trim().equals(ActionData))
                         return true;
-                }
-                catch (Exception e)
+                }catch (Exception e)
                 {
-                	Assert.assertFalse(true);
+                	Assert.assertFalse("Object "+ FieldName+" Not Found",true);
                     return false;
                 }
             default:
@@ -197,7 +192,7 @@ public class SeleniumHelper extends SeleniumDriver{
         }
         catch (Exception e)
         {
-        	Assert.assertFalse(true);
+        	Assert.assertFalse("Object "+ element+" Not Found",true);
             return false;
         }
     }
@@ -226,37 +221,37 @@ public class SeleniumHelper extends SeleniumDriver{
                 {
                     elementObj.click();
                     return true;
-                }
-                catch (Exception e)
+                }catch (Exception e)
                 {
-                    return false;
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
+                	return false;
                 }
             case "ReadValue":
                 try
                 {
                     boolean flag = elementObj.isSelected();
                     return flag;
-                }
-                catch (Exception e)
+                }catch (Exception e)
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ObjectExist":
                 if (elementObj.isDisplayed())
                 {
                     return true;
-                }
-                else
+                }else
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ObjectEnabled":
                 if (elementObj.isEnabled())
                 {
                     return true;
-                }
-                else
+                }else
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             default:
@@ -281,9 +276,9 @@ public class SeleniumHelper extends SeleniumDriver{
                 {
                     selectElement.selectByVisibleText(ActionData);
                     return true;
-                }
-                catch (Exception e)
+                }catch (Exception e)
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ReadValue":
@@ -293,6 +288,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 catch (Exception e)
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "VerifyValue":
@@ -303,6 +299,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 else
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ObjectExist":
@@ -312,6 +309,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 else
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             default:
@@ -332,15 +330,18 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 catch (Exception e)
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ObjectExist":
                 if (elementObj.isDisplayed())
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return true;
                 }
                 else
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ObjectEnabled":
@@ -350,6 +351,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 else
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             default:
@@ -371,6 +373,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 catch (Exception e)
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ClearValue":
@@ -381,6 +384,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 catch (Exception e)
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ReadValue":
@@ -391,6 +395,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 catch (Exception e)
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "VerifyValue":
@@ -401,6 +406,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 else
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ObjectExist":
@@ -410,6 +416,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 else
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ObjectEnabled":
@@ -419,6 +426,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 else
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             default:
@@ -440,6 +448,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 catch (Exception e)
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ReadValue":
@@ -449,6 +458,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 catch (Exception e)
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ObjectExist":
@@ -458,6 +468,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 else
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ObjectEnabled":
@@ -467,6 +478,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 else
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             default:
@@ -487,6 +499,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 catch (Exception e)
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ObjectExist":
@@ -496,6 +509,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 else
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             case "ObjectEnabled":
@@ -505,6 +519,7 @@ public class SeleniumHelper extends SeleniumDriver{
                 }
                 else
                 {
+                	Assert.assertFalse("Object "+ element+" Not Found",true);
                     return false;
                 }
             default:

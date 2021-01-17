@@ -11,6 +11,9 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import junit.framework.Assert;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -28,7 +31,7 @@ public class SeleniumDriver {
     public final static int TIMEOUT = 30;
     public final static int PAGE_LOAD_TIMEOUT = 30;
     public static String browser=System.getenv("Browser"), url=System.getenv("ApplicationURL");
-    //public static String browser="firefox", url="https://www.spicejet.com/";
+    //public static String browser="chrome", url="https://www.spicejet.com/";
     public static String gbReturnValue="";
 
     public static void loadConfigProperties() throws IOException{
@@ -72,7 +75,12 @@ public class SeleniumDriver {
     }
 
     public static void openPage(String url) {
-        driver.get(url);
+    	try {
+        	driver.get(url);
+    	}catch (Exception e) {
+			e.printStackTrace();
+			Assert.assertTrue("url of the application is "+url, false);
+		}
     }
 
     public static WebDriver getDriver() {
@@ -80,13 +88,13 @@ public class SeleniumDriver {
     }
 
    
-    public static void waitForPageToLoad()
+    /*public static void waitForPageToLoad()
     {
     	try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-    }
+    }*/
 }
 ;
