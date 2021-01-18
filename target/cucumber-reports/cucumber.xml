@@ -1,38 +1,202 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="39.055958">
-<testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page" time="11.410269">
-<system-out><![CDATA[Given I am on the nigels landing Page of maths Website......................passed
-When I click on the link "Contents".........................................passed
-Then I should see list of "Contents" in the right frames....................passed
-And the page title should be HTML Learning Package..........................passed
-]]></system-out>
+<testsuite failures="7" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="196.575746">
+<testcase classname="Test to validate Drag &amp; Drop with frames in Droppable Feature" name="Drag &amp; Drop in a Frame" time="49.604451">
+<failure message="java.lang.AssertionError: Object Droppable Not Found&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:89)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:65)&#13;&#10;&#9;at Utils.SeleniumHelper.GetWebElement(SeleniumHelper.java:90)&#13;&#10;&#9;at Utils.SeleniumHelper.ObjectLink(SeleniumHelper.java:97)&#13;&#10;&#9;at StepDefinitions.JQueryDroppableSD.user_should_clicks_on_Droppable_link(JQueryDroppableSD.java:16)&#13;&#10;&#9;at ✽.User should clicks on Droppable link(file:src/test/java/FeatureFiles/JQueryDroppablePage.feature:9)&#13;&#10;"><![CDATA[Given User is in the jQuery landing page....................................passed
+When User should clicks on Droppable link...................................failed
+And User switches to respective frame.......................................skipped
+And tries to move the drag me object to drop me object......................skipped
+Then User should be should be successfully drag & drop the object...........skipped
+
+StackTrace:
+java.lang.AssertionError: Object Droppable Not Found
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at Utils.SeleniumHelper.GetWebElement(SeleniumHelper.java:90)
+	at Utils.SeleniumHelper.ObjectLink(SeleniumHelper.java:97)
+	at StepDefinitions.JQueryDroppableSD.user_should_clicks_on_Droppable_link(JQueryDroppableSD.java:16)
+	at ✽.User should clicks on Droppable link(file:src/test/java/FeatureFiles/JQueryDroppablePage.feature:9)
+]]></failure>
 </testcase>
-<testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page 2" time="7.324329">
-<system-out><![CDATA[Given I am on the nigels landing Page of maths Website......................passed
-When I click on the link "Background".......................................passed
-Then I should see list of "HTML Background" in the right frames.............passed
-And the page title should be HTML Learning Package..........................passed
-]]></system-out>
+<testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating clicking on a menu navigate to respective menu details screen" time="43.752198">
+<failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: Demos&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'&#10;System info: host: 'DESKTOP-LIT0RJ3', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 14316, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: c1c3c615-201b-4325-a4b0-479a9992f751&#10;*** Element info: {Using=partial link text, value=Demos}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)&#13;&#10;&#9;at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:267)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)&#13;&#10;&#9;at StepDefinitions.JQueryStepDef.user_should_clicks_on(JQueryStepDef.java:43)&#13;&#10;&#9;at ✽.User should clicks on &quot;Demos&quot;(file:src/test/java/FeatureFiles/JQueyHomePage.feature:26)&#13;&#10;"><![CDATA[Given User is in the jQuery landing page....................................passed
+When User should clicks on "Demos"..........................................failed
+Then menu screen "jQuery UI Demos" should display...........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: Demos
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-LIT0RJ3', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 14316, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c1c3c615-201b-4325-a4b0-479a9992f751
+*** Element info: {Using=partial link text, value=Demos}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:267)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at StepDefinitions.JQueryStepDef.user_should_clicks_on(JQueryStepDef.java:43)
+	at ✽.User should clicks on "Demos"(file:src/test/java/FeatureFiles/JQueyHomePage.feature:26)
+]]></failure>
 </testcase>
-<testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page 3" time="7.027197">
-<system-out><![CDATA[Given I am on the nigels landing Page of maths Website......................passed
-When I click on the link "Beg's Guide"......................................passed
-Then I should see list of "Beginner's Guide" in the right frames............passed
-And the page title should be HTML Learning Package..........................passed
-]]></system-out>
+<testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating clicking on a menu navigate to respective menu details screen 2" time="24.571839">
+<failure message="org.openqa.selenium.WebDriverException: Failed to decode response from marionette&#10;Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'&#10;System info: host: 'DESKTOP-LIT0RJ3', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 14716, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 71b80614-d25e-4794-8718-03dc15a48721&#10;*** Element info: {Using=partial link text, value=Download}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)&#13;&#10;&#9;at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:267)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)&#13;&#10;&#9;at StepDefinitions.JQueryStepDef.user_should_clicks_on(JQueryStepDef.java:43)&#13;&#10;&#9;at ✽.User should clicks on &quot;Download&quot;(file:src/test/java/FeatureFiles/JQueyHomePage.feature:26)&#13;&#10;"><![CDATA[Given User is in the jQuery landing page....................................passed
+When User should clicks on "Download".......................................failed
+Then menu screen "Download Builder" should display..........................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-LIT0RJ3', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 14716, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 71b80614-d25e-4794-8718-03dc15a48721
+*** Element info: {Using=partial link text, value=Download}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:267)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at StepDefinitions.JQueryStepDef.user_should_clicks_on(JQueryStepDef.java:43)
+	at ✽.User should clicks on "Download"(file:src/test/java/FeatureFiles/JQueyHomePage.feature:26)
+]]></failure>
 </testcase>
-<testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page 4" time="6.925443">
-<system-out><![CDATA[Given I am on the nigels landing Page of maths Website......................passed
-When I click on the link "HTML Tags"........................................passed
-Then I should see list of "HTML Tags" in the right frames...................passed
-And the page title should be HTML Learning Package..........................passed
-]]></system-out>
+<testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating clicking on a menu navigate to respective menu details screen 3" time="24.495706">
+<failure message="org.openqa.selenium.WebDriverException: Failed to decode response from marionette&#10;Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'&#10;System info: host: 'DESKTOP-LIT0RJ3', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 15592, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 5279458c-ed87-48a2-b6c9-a8e800f17bc6&#10;*** Element info: {Using=partial link text, value=API Documentation}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)&#13;&#10;&#9;at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:267)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)&#13;&#10;&#9;at StepDefinitions.JQueryStepDef.user_should_clicks_on(JQueryStepDef.java:43)&#13;&#10;&#9;at ✽.User should clicks on &quot;API Documentation&quot;(file:src/test/java/FeatureFiles/JQueyHomePage.feature:26)&#13;&#10;"><![CDATA[Given User is in the jQuery landing page....................................passed
+When User should clicks on "API Documentation"..............................failed
+Then menu screen "jQuery UI 1.12 API Documentation" should display..........skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-LIT0RJ3', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 15592, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5279458c-ed87-48a2-b6c9-a8e800f17bc6
+*** Element info: {Using=partial link text, value=API Documentation}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:267)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at StepDefinitions.JQueryStepDef.user_should_clicks_on(JQueryStepDef.java:43)
+	at ✽.User should clicks on "API Documentation"(file:src/test/java/FeatureFiles/JQueyHomePage.feature:26)
+]]></failure>
 </testcase>
-<testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page 5" time="6.36872">
-<system-out><![CDATA[Given I am on the nigels landing Page of maths Website......................passed
-When I click on the link "Tables"...........................................passed
-Then I should see list of "Tables" in the right frames......................passed
-And the page title should be HTML Learning Package..........................passed
-]]></system-out>
+<testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating clicking on a menu navigate to respective menu details screen 4" time="30.224902">
+<failure message="org.openqa.selenium.WebDriverException: Failed to decode response from marionette&#10;Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'&#10;System info: host: 'DESKTOP-LIT0RJ3', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 11060, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: aed85994-19b6-4cfa-8151-39b06f6dff65&#10;*** Element info: {Using=partial link text, value=Themes}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)&#13;&#10;&#9;at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:267)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)&#13;&#10;&#9;at StepDefinitions.JQueryStepDef.user_should_clicks_on(JQueryStepDef.java:43)&#13;&#10;&#9;at ✽.User should clicks on &quot;Themes&quot;(file:src/test/java/FeatureFiles/JQueyHomePage.feature:26)&#13;&#10;"><![CDATA[Given User is in the jQuery landing page....................................passed
+When User should clicks on "Themes".........................................failed
+Then menu screen "ThemeRoller" should display...............................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-LIT0RJ3', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 11060, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aed85994-19b6-4cfa-8151-39b06f6dff65
+*** Element info: {Using=partial link text, value=Themes}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:267)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at StepDefinitions.JQueryStepDef.user_should_clicks_on(JQueryStepDef.java:43)
+	at ✽.User should clicks on "Themes"(file:src/test/java/FeatureFiles/JQueyHomePage.feature:26)
+]]></failure>
+</testcase>
+<testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating clicking on a menu navigate to respective menu details screen 5" time="15.825232">
+<failure message="org.openqa.selenium.WebDriverException: Failed to decode response from marionette&#10;Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'&#10;System info: host: 'DESKTOP-LIT0RJ3', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 9028, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: e162a2cb-ca08-472c-bea2-fd1e7d8d4e36&#10;*** Element info: {Using=partial link text, value=Development}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)&#13;&#10;&#9;at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:267)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)&#13;&#10;&#9;at StepDefinitions.JQueryStepDef.user_should_clicks_on(JQueryStepDef.java:43)&#13;&#10;&#9;at ✽.User should clicks on &quot;Development&quot;(file:src/test/java/FeatureFiles/JQueyHomePage.feature:26)&#13;&#10;"><![CDATA[Given User is in the jQuery landing page....................................passed
+When User should clicks on "Development"....................................failed
+Then menu screen "Development Center" should display........................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-LIT0RJ3', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 9028, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e162a2cb-ca08-472c-bea2-fd1e7d8d4e36
+*** Element info: {Using=partial link text, value=Development}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:267)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at StepDefinitions.JQueryStepDef.user_should_clicks_on(JQueryStepDef.java:43)
+	at ✽.User should clicks on "Development"(file:src/test/java/FeatureFiles/JQueyHomePage.feature:26)
+]]></failure>
+</testcase>
+<testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating clicking on a menu navigate to respective menu details screen 6" time="8.101418">
+<failure message="org.openqa.selenium.WebDriverException: Failed to decode response from marionette&#10;Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'&#10;System info: host: 'DESKTOP-LIT0RJ3', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 4100, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 35775d96-c584-407d-af89-2875da7e21ac&#10;*** Element info: {Using=partial link text, value=About}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)&#13;&#10;&#9;at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:267)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)&#13;&#10;&#9;at StepDefinitions.JQueryStepDef.user_should_clicks_on(JQueryStepDef.java:43)&#13;&#10;&#9;at ✽.User should clicks on &quot;About&quot;(file:src/test/java/FeatureFiles/JQueyHomePage.feature:26)&#13;&#10;"><![CDATA[Given User is in the jQuery landing page....................................passed
+When User should clicks on "About"..........................................failed
+Then menu screen "About jQuery UI" should display...........................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-LIT0RJ3', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 4100, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 35775d96-c584-407d-af89-2875da7e21ac
+*** Element info: {Using=partial link text, value=About}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:267)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at StepDefinitions.JQueryStepDef.user_should_clicks_on(JQueryStepDef.java:43)
+	at ✽.User should clicks on "About"(file:src/test/java/FeatureFiles/JQueyHomePage.feature:26)
+]]></failure>
 </testcase>
 </testsuite>

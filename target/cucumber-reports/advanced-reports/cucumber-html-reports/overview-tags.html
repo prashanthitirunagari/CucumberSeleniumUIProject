@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@MathsSanity", ] ,
+        labels:  [ "@JQueryRegression",  "@JQuerySanity", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00, ] 
+                data:  [ 0.00,  0.00, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00, ] 
+                data:  [ 50.00,  43.75, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00, ] 
+                data:  [ 50.00,  56.25, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00, ] 
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>CucumberSeleniumUIProject</td>
         <td>1</td>
-      <td>18 Jan 2021, 01:05</td>
+      <td>18 Jan 2021, 10:02</td>
     </tr>
   </tbody>
 </table>
@@ -197,54 +197,71 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-tag_2115820216.html">@MathsSanity</a></td>
+        <td class="tagname"><a href="report-tag_970618302.html">@JQueryRegression</a></td>
 
-        <td      class="passed"    >20</td>
+        <td >0</td>
+        <td      class="failed"    >6</td>
+        <td     class="skipped"   >6</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">20</td>
+        <td class="total">12</td>
 
-        <td  class="passed"    >5</td>
         <td >0</td>
-        <td class="total">5</td>
+        <td  class="failed"    >6</td>
+        <td class="total">6</td>
 
-        <td class="duration" data-value="2141934700">2.141</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="83232450202">1:23.232</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_1900885323.html">@JQuerySanity</a></td>
+
+        <td >0</td>
+        <td      class="failed"    >7</td>
+        <td     class="skipped"   >9</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">16</td>
+
+        <td >0</td>
+        <td  class="failed"    >7</td>
+        <td class="total">7</td>
+
+        <td class="duration" data-value="114324163301">1:54.324</td>
+        <td class="failed">Failed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>20</td>
+      <td>0</td>
+      <td>13</td>
+      <td>15</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>20</td>
+      <td>28</td>
 
-      <td>5</td>
       <td>0</td>
-      <td>5</td>
+      <td>13</td>
+      <td>13</td>
 
-      <td class="duration">2.141</td>
-      <td>1</td>
+      <td class="duration">3:17.556</td>
+      <td>2</td>
     </tr>
     <tr>
       <td></td>
-      <td>100.00%</td>
       <td>0.00%</td>
-      <td>0.00%</td>
+      <td>46.43%</td>
+      <td>53.57%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>100.00%</td>
       <td>0.00%</td>
-      <td></td>
-      <td></td>
       <td>100.00%</td>
+      <td></td>
+      <td></td>
+      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>

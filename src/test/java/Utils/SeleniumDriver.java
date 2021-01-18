@@ -30,8 +30,8 @@ public class SeleniumDriver {
 
     public final static int TIMEOUT = 30;
     public final static int PAGE_LOAD_TIMEOUT = 30;
-    //public static String browser=System.getenv("Browser"), url=System.getenv("ApplicationURL");
-    public static String browser="firefox", url="https://spicejet.com";
+    public static String browser=System.getenv("Browser"), url=System.getenv("ApplicationURL");
+    //public static String browser="firefox", url="https://spicejet.com";
     public static String gbReturnValue="";
 
     public static void loadConfigProperties() throws IOException{
