@@ -10,4 +10,3 @@ Feature: Test to validate Drag & Drop with frames in Droppable Feature
     And User switches to respective frame 
     And tries to move the drag me object to drop me object
     Then User should be should be successfully drag & drop the object
-    

@@ -30,8 +30,8 @@ public class SeleniumDriver {
 
     public final static int TIMEOUT = 30;
     public final static int PAGE_LOAD_TIMEOUT = 30;
-    public static String browser=System.getenv("Browser"), url=System.getenv("ApplicationURL");
-    //public static String browser="chrome", url="https://www.spicejet.com/";
+    //public static String browser=System.getenv("Browser"), url=System.getenv("ApplicationURL");
+    public static String browser="firefox", url="https://spicejet.com";
     public static String gbReturnValue="";
 
     public static void loadConfigProperties() throws IOException{
@@ -58,6 +58,7 @@ public class SeleniumDriver {
 	        driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 	     }else if(browser.toLowerCase().equals("chrome")){
     		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\chromedriver.exe");
+    		System.setProperty("webdriver.chrome.logfile", System.getProperty("user.dir")+"\\src\\test\\resources\\chromedriver.log");
     		ChromeOptions ops = new ChromeOptions();
     		ops.addArguments("--disable-notifications");
     		ops.addArguments("disable_infobars");

@@ -11,7 +11,7 @@ public class SpiceJetHomePage {
 	public static String currency = "ctl00_mainContent_DropDownListCurrency";
 	public static String search="ctl00_mainContent_btn_FindFlights";
 	public static String currentDate=".ui-state-default.ui-state-highlight.ui-state-active";
-	
+	public static String returnDate="ctl00_mainContent_view_date2";
 	public static String chooseADepflight="//*[@id='availabilityTable0']/tbody/tr[1]/th/div[1]";
 	
 }

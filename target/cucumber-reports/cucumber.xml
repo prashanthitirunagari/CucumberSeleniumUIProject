@@ -1,68 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="4" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="105.517591">
-    <testcase classname="Test to validate Drag &amp; Drop with frames in Droppable Feature" name="Drag &amp; Drop in a Frame" time="39.722763">
-        <failure message="java.lang.AssertionError: Object Droppable Not Found&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:89)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:65)&#13;&#10;&#9;at Utils.SeleniumHelper.GetWebElement(SeleniumHelper.java:90)&#13;&#10;&#9;at Utils.SeleniumHelper.ObjectLink(SeleniumHelper.java:97)&#13;&#10;&#9;at StepDefinitions.JQueryDroppableSD.user_should_clicks_on_Droppable_link(JQueryDroppableSD.java:16)&#13;&#10;&#9;at ✽.User should clicks on Droppable link(file:src/test/java/FeatureFiles/JQueryDroppablePage.feature:9)&#13;&#10;"><![CDATA[Given User is in the jQuery landing page....................................passed
-When User should clicks on Droppable link...................................failed
-And User switches to respective frame.......................................skipped
-And tries to move the drag me object to drop me object......................skipped
-Then User should be should be successfully drag & drop the object...........skipped
-
-StackTrace:
-java.lang.AssertionError: Object Droppable Not Found
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertFalse(Assert.java:65)
-	at Utils.SeleniumHelper.GetWebElement(SeleniumHelper.java:90)
-	at Utils.SeleniumHelper.ObjectLink(SeleniumHelper.java:97)
-	at StepDefinitions.JQueryDroppableSD.user_should_clicks_on_Droppable_link(JQueryDroppableSD.java:16)
-	at ✽.User should clicks on Droppable link(file:src/test/java/FeatureFiles/JQueryDroppablePage.feature:9)
-]]></failure>
-    </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Verification of the page title" time="8.007407">
-        <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:87)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:65)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:75)&#13;&#10;&#9;at StepDefinitions.JQueryStepDef.the_page_title_should_be(JQueryStepDef.java:31)&#13;&#10;&#9;at ✽.the page title should be &quot;jQuery UI&quot;(file:src/test/java/FeatureFiles/JQueyHomePage.feature:11)&#13;&#10;"><![CDATA[Given User is in the jQuery landing page....................................passed
-Then the page title should be "jQuery UI"...................................failed
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertFalse(Assert.java:65)
-	at org.junit.Assert.assertFalse(Assert.java:75)
-	at StepDefinitions.JQueryStepDef.the_page_title_should_be(JQueryStepDef.java:31)
-	at ✽.the page title should be "jQuery UI"(file:src/test/java/FeatureFiles/JQueyHomePage.feature:11)
-]]></failure>
-    </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating existence of menus in Jqueryui home Page" time="39.194512">
-        <failure message="java.lang.AssertionError: Object Demos Not Found&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:89)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:65)&#13;&#10;&#9;at Utils.SeleniumHelper.GetWebElement(SeleniumHelper.java:90)&#13;&#10;&#9;at Utils.SeleniumHelper.ObjectLink(SeleniumHelper.java:97)&#13;&#10;&#9;at StepDefinitions.JQueryStepDef.user_should_see_list_of_menus(JQueryStepDef.java:37)&#13;&#10;&#9;at ✽.User should see list of &quot;Demos&quot;(file:src/test/java/FeatureFiles/JQueyHomePage.feature:16)&#13;&#10;"><![CDATA[Given User is in the jQuery landing page....................................passed
-Then User should see list of "Demos"........................................failed
-
-StackTrace:
-java.lang.AssertionError: Object Demos Not Found
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertFalse(Assert.java:65)
-	at Utils.SeleniumHelper.GetWebElement(SeleniumHelper.java:90)
-	at Utils.SeleniumHelper.ObjectLink(SeleniumHelper.java:97)
-	at StepDefinitions.JQueryStepDef.user_should_see_list_of_menus(JQueryStepDef.java:37)
-	at ✽.User should see list of "Demos"(file:src/test/java/FeatureFiles/JQueyHomePage.feature:16)
-]]></failure>
-    </testcase>
-    <testcase classname="Test to validate Menus in the JqueryUi home page" name="Validating clicking on a menu navigate to respective menu details screen" time="18.592909">
-        <failure message="org.openqa.selenium.NoSuchElementException: Cannot locate an element using partial link text=Demos&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'&#10;System info: host: 'DESKTOP-LIT0RJ3', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: driver.version: RemoteWebDriver&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:335)&#13;&#10;&#9;at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:267)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)&#13;&#10;&#9;at StepDefinitions.JQueryStepDef.user_should_clicks_on(JQueryStepDef.java:43)&#13;&#10;&#9;at ✽.User should clicks on &quot;Demos&quot;(file:src/test/java/FeatureFiles/JQueyHomePage.feature:25)&#13;&#10;"><![CDATA[Given User is in the jQuery landing page....................................passed
-When User should clicks on "Demos"..........................................failed
-Then menu screen "jQuery UI Demos" should display...........................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: Cannot locate an element using partial link text=Demos
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
-System info: host: 'DESKTOP-LIT0RJ3', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:335)
-	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:267)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
-	at StepDefinitions.JQueryStepDef.user_should_clicks_on(JQueryStepDef.java:43)
-	at ✽.User should clicks on "Demos"(file:src/test/java/FeatureFiles/JQueyHomePage.feature:25)
-]]></failure>
-    </testcase>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="39.055958">
+<testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page" time="11.410269">
+<system-out><![CDATA[Given I am on the nigels landing Page of maths Website......................passed
+When I click on the link "Contents".........................................passed
+Then I should see list of "Contents" in the right frames....................passed
+And the page title should be HTML Learning Package..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page 2" time="7.324329">
+<system-out><![CDATA[Given I am on the nigels landing Page of maths Website......................passed
+When I click on the link "Background".......................................passed
+Then I should see list of "HTML Background" in the right frames.............passed
+And the page title should be HTML Learning Package..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page 3" time="7.027197">
+<system-out><![CDATA[Given I am on the nigels landing Page of maths Website......................passed
+When I click on the link "Beg's Guide"......................................passed
+Then I should see list of "Beginner's Guide" in the right frames............passed
+And the page title should be HTML Learning Package..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page 4" time="6.925443">
+<system-out><![CDATA[Given I am on the nigels landing Page of maths Website......................passed
+When I click on the link "HTML Tags"........................................passed
+Then I should see list of "HTML Tags" in the right frames...................passed
+And the page title should be HTML Learning Package..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test to validate links in the left frame" name="Validate maths surrey Page 5" time="6.36872">
+<system-out><![CDATA[Given I am on the nigels landing Page of maths Website......................passed
+When I click on the link "Tables"...........................................passed
+Then I should see list of "Tables" in the right frames......................passed
+And the page title should be HTML Learning Package..........................passed
+]]></system-out>
+</testcase>
 </testsuite>

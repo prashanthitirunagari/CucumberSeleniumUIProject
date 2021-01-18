@@ -45,7 +45,7 @@ public class SpiceJetHomePageSD extends SeleniumDriver{
 	    
     }
 
-    @Then("^the page which asks for GST details should display$")
+    @Then("^User should navigate to search results page$")
     public void the_page_which_asks_for_gst_details_should_display()  {
         //Assert.assertTrue(SeleniumHelper.ObjectText(SpiceJetHomePage.chooseADepflight, Locator.XPath, "ReadValue", ""));
         Assert.assertEquals(SeleniumHelper.GetPageTitle(),"Cheap Air Tickets Online, International Flights to India, Cheap International Flight Deals | SpiceJet Airlines");

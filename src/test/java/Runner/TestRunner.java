@@ -10,13 +10,11 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features={"src/test/java/FeatureFiles"}, 
 		glue= {"StepDefinitions","Hooks"}, 
-		tags= "@JQuerySanity",
+		tags= "@SpiceJetSanity",
 		monochrome=true, 
 		dryRun=false,
 		plugin={"html:target/cucumber-html-report","json:target/cucumber-reports/cucumber.json","junit:target/cucumber-reports/cucumber.xml","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		)
-
-
 public class TestRunner {
 	
 	
